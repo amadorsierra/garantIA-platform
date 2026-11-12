@@ -58,6 +58,34 @@ jobs:
       - name: Compilar y ejecutar las pruebas
         run: ./mvnw -B clean verify
 
+  # Pruebas de aceptación de las T0. Mientras las historias están en curso
+  # informan de cuántas pasan, pero no bloquean la integración (continue-on-error).
+  # Al cerrar las historias del sprint, quitar continue-on-error para que sean obligatorias.
+  aceptacion:
+    name: Pruebas de aceptación (pendientes)
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    defaults:
+      run:
+        working-directory: backend
+
+    steps:
+      - name: Descargar el código
+        uses: actions/checkout@v4
+
+      - name: Instalar Java 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+          cache: maven
+
+      - name: Dar permiso de ejecución a mvnw
+        run: chmod +x mvnw
+
+      - name: Ejecutar las pruebas de aceptación
+        run: ./mvnw -B verify -Paceptacion
+
   frontend:
     name: Frontend (React)
     runs-on: ubuntu-latest

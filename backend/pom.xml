@@ -119,6 +119,15 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<!-- Las pruebas de aceptación (@Tag("aceptacion")) no se ejecutan en el build normal:
+			     se lanzan aparte con el perfil "aceptacion" (./mvnw verify -Paceptacion) -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<configuration>
+					<excludedGroups>aceptacion</excludedGroups>
+				</configuration>
+			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -157,5 +166,24 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<profiles>
+		<!-- Ejecuta solo las pruebas de aceptación de las T0 -->
+		<profile>
+			<id>aceptacion</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-surefire-plugin</artifactId>
+						<configuration>
+							<groups>aceptacion</groups>
+							<excludedGroups>ninguno</excludedGroups>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
 
 </project>
