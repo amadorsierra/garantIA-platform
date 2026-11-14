@@ -1,0 +1,5 @@
+# Perfil para desarrollar en local: ./mvnw spring-boot:run -Dspring-boot.run.profiles=dev
+# Base de datos: docker compose up -d (ver compose.yaml)
+spring:
+  jpa:
+    show-sql: true

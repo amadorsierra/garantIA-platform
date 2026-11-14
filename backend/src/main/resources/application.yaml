@@ -1,3 +1,14 @@
 spring:
   application:
     name: garantia-backend
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/garantia}
+    username: ${DB_USUARIO:garantia}
+    password: ${DB_PASSWORD:garantia}
+  jpa:
+    open-in-view: false
+    hibernate:
+      # El esquema lo crean las migraciones de Flyway; Hibernate solo comprueba que coincide
+      ddl-auto: validate
+  flyway:
+    locations: classpath:db/migration
