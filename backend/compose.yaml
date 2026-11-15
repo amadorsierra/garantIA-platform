@@ -1,0 +1,15 @@
+# Base de datos para desarrollar en local: docker compose up -d
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: garantia
+      POSTGRES_USER: garantia
+      POSTGRES_PASSWORD: garantia
+    ports:
+      - "5432:5432"
+    volumes:
+      - garantia-datos:/var/lib/postgresql/data
+
+volumes:
+  garantia-datos:
