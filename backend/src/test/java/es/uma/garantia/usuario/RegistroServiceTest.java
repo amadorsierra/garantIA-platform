@@ -52,4 +52,12 @@ class RegistroServiceTest {
 
 		verify(usuarios, never()).save(any());
 	}
+
+	@Test
+	void rechazaUnaContrasenaQueContieneElNombreDeUsuario() {
+		assertThatThrownBy(() -> servicio.registrar(new RegistroRequest("lucia", "x@correo.es", "Lucia2026")))
+				.isInstanceOf(ContrasenaDebilException.class);
+
+		verify(usuarios, never()).save(any());
+	}
 }
