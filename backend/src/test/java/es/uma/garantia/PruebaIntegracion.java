@@ -12,6 +12,8 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.transaction.annotation.Transactional;
 
+import jakarta.persistence.EntityManager;
+
 /**
  * Base de las pruebas de integración y de aceptación.
  *
@@ -36,6 +38,9 @@ public abstract class PruebaIntegracion {
 	@Autowired
 	protected JdbcTemplate jdbc;
 
+	@Autowired
+	protected EntityManager entityManager;
+
 	/** Registra una cuenta nueva a través de la API (rol por defecto: Usuario Afectado). */
 	protected void registrar(String nombreUsuario, String email) throws Exception {
 		String json = """
@@ -52,6 +57,9 @@ public abstract class PruebaIntegracion {
 	protected void registrarConRol(String nombreUsuario, String email, String rol) throws Exception {
 		registrar(nombreUsuario, email);
 		jdbc.update("UPDATE usuarios SET rol = ? WHERE email = ?", rol, email);
+		// Cada prueba corre en una sola transacción: hay que vaciar la caché de JPA para que
+		// la siguiente petición lea el rol nuevo de la base de datos y no la cuenta en memoria.
+		entityManager.clear();
 	}
 
 	protected Long idDe(String email) {
