@@ -8,6 +8,10 @@ const CASOS = [
   { id: 2, titulo: 'Lavadora con fuga de agua', autor: 'pablo', fechaPublicacion: '2026-11-03T10:00:00', categoria: 'Electrodomésticos', estado: 'RESUELTO' }
 ]
 
+function pagina(contenido, numero = 0, totalPaginas = 1) {
+  return { contenido, pagina: numero, tamano: 10, totalElementos: contenido.length, totalPaginas }
+}
+
 // API falsa: categorías fijas y, para la lista, lo que devuelva respuestaLista(url)
 function api(respuestaLista) {
   return simularApi((url) => {
@@ -35,7 +39,7 @@ function mostrar(ruta = '/casos') {
 
 describe('CasosPagina', () => {
   it('muestra título, estado, categoría, autor y fecha de cada caso (CA2)', async () => {
-    api(() => ({ estado: 200, cuerpo: CASOS }))
+    api(() => ({ estado: 200, cuerpo: pagina(CASOS) }))
     mostrar()
 
     const elementos = await screen.findAllByRole('listitem')
@@ -48,7 +52,7 @@ describe('CasosPagina', () => {
   })
 
   it('aplica los filtros de estado, categoría y orden (CA3)', async () => {
-    const fetch = api(() => ({ estado: 200, cuerpo: CASOS }))
+    const fetch = api(() => ({ estado: 200, cuerpo: pagina(CASOS) }))
     mostrar()
     await screen.findAllByRole('listitem')
     await screen.findByRole('option', { name: 'Electrónica' })
@@ -68,7 +72,7 @@ describe('CasosPagina', () => {
   })
 
   it('busca por texto libre al pulsar Buscar (CA4)', async () => {
-    const fetch = api(() => ({ estado: 200, cuerpo: CASOS }))
+    const fetch = api(() => ({ estado: 200, cuerpo: pagina(CASOS) }))
     mostrar()
     await screen.findAllByRole('listitem')
 
@@ -81,7 +85,7 @@ describe('CasosPagina', () => {
   })
 
   it('carga los filtros que vienen en la dirección', async () => {
-    const fetch = api(() => ({ estado: 200, cuerpo: CASOS }))
+    const fetch = api(() => ({ estado: 200, cuerpo: pagina(CASOS) }))
     mostrar('/casos?estado=CERRADO&q=nevera')
     await screen.findAllByRole('listitem')
 
@@ -91,7 +95,7 @@ describe('CasosPagina', () => {
   })
 
   it('si no hay resultados lo indica y permite quitar los filtros (CA6)', async () => {
-    const fetch = api(() => ({ estado: 200, cuerpo: [] }))
+    const fetch = api(() => ({ estado: 200, cuerpo: pagina([]) }))
     mostrar('/casos?q=bicicleta')
 
     expect(await screen.findByRole('status')).toHaveTextContent('No hay casos que coincidan con tu búsqueda')
@@ -106,7 +110,7 @@ describe('CasosPagina', () => {
     let llamadas = 0
     api(() => {
       llamadas++
-      return llamadas === 1 ? { estado: 500, cuerpo: { mensaje: 'Error interno' } } : { estado: 200, cuerpo: CASOS }
+      return llamadas === 1 ? { estado: 500, cuerpo: { mensaje: 'Error interno' } } : { estado: 200, cuerpo: pagina(CASOS) }
     })
     mostrar()
 
@@ -121,5 +125,24 @@ describe('CasosPagina', () => {
     mostrar()
 
     expect(await screen.findByRole('alert')).toHaveTextContent('Acceso denegado: no tienes permiso para esta acción')
+  })
+
+  it('pasa de página y vuelve a la primera al cambiar un filtro (T5)', async () => {
+    const fetch = api((url) => {
+      const numero = Number(new URL(url, 'http://localhost').searchParams.get('pagina') || 0)
+      return { estado: 200, cuerpo: pagina(CASOS, numero, 3) }
+    })
+    mostrar()
+
+    expect(await screen.findByText('Página 1 de 3')).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: '← Anterior' })).toBeDisabled()
+
+    fireEvent.click(screen.getByRole('button', { name: 'Siguiente →' }))
+    expect(await screen.findByText('Página 2 de 3')).toBeInTheDocument()
+    expect(peticionesDeLista(fetch).pop()).toContain('pagina=1')
+
+    fireEvent.change(screen.getByLabelText('Estado'), { target: { value: 'ABIERTO' } })
+    expect(await screen.findByText('Página 1 de 3')).toBeInTheDocument()
+    expect(peticionesDeLista(fetch).pop()).not.toContain('pagina=')
   })
 })
