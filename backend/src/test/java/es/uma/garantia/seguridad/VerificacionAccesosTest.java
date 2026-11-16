@@ -133,6 +133,10 @@ class VerificacionAccesosTest extends PruebaIntegracion {
 				.andExpect(status().isOk());
 
 		jdbc.update("UPDATE usuarios SET rol = 'USUARIO_AFECTADO' WHERE email = ?", admin);
+		// La prueba corre en una sola transacción: sin esto, JPA devolvería la cuenta que ya
+		// tiene en memoria (con el rol antiguo) en lugar de leerla otra vez de la base de datos.
+		// En la aplicación real cada petición tiene su propia transacción y lee el rol actual.
+		entityManager.clear();
 
 		mvc.perform(get("/api/admin/usuarios").with(httpBasic(admin, PASSWORD)))
 				.andExpect(status().isForbidden());
