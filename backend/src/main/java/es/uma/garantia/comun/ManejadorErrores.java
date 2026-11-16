@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
 
+import es.uma.garantia.admin.CambioRolNoPermitidoException;
+import es.uma.garantia.admin.UsuarioNoEncontradoException;
 import es.uma.garantia.caso.CasoNoEncontradoException;
 import es.uma.garantia.usuario.EmailYaRegistradoException;
 
@@ -62,6 +64,20 @@ public class ManejadorErrores {
 	@ExceptionHandler(CasoNoEncontradoException.class)
 	@ResponseStatus(HttpStatus.NOT_FOUND)
 	public RespuestaError casoNoEncontrado(CasoNoEncontradoException excepcion) {
+		return RespuestaError.de(excepcion.getMessage());
+	}
+
+	/** 404 · La cuenta a la que se quiere cambiar el rol no existe. */
+	@ExceptionHandler(UsuarioNoEncontradoException.class)
+	@ResponseStatus(HttpStatus.NOT_FOUND)
+	public RespuestaError usuarioNoEncontrado(UsuarioNoEncontradoException excepcion) {
+		return RespuestaError.de(excepcion.getMessage());
+	}
+
+	/** 409 · Un administrador intenta cambiar su propio rol. */
+	@ExceptionHandler(CambioRolNoPermitidoException.class)
+	@ResponseStatus(HttpStatus.CONFLICT)
+	public RespuestaError cambioRolNoPermitido(CambioRolNoPermitidoException excepcion) {
 		return RespuestaError.de(excepcion.getMessage());
 	}
 }

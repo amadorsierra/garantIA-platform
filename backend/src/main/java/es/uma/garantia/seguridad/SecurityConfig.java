@@ -3,6 +3,7 @@ package es.uma.garantia.seguridad;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
+import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
@@ -18,9 +19,11 @@ import org.springframework.security.web.SecurityFilterChain;
  * - Autenticación HTTP Basic con el correo y la contraseña, sin sesión en el servidor.
  * - Se comprueba por permiso, no por rol.
  * - Lo que no aparece en la lista exige haber iniciado sesión (denegar por defecto).
+ * - @EnableMethodSecurity activa además las comprobaciones @PreAuthorize de los servicios (HU-26 T5).
  */
 @Configuration
 @EnableWebSecurity
+@EnableMethodSecurity
 public class SecurityConfig {
 
 	@Bean
