@@ -1,111 +1,150 @@
+/* Estilos según docs/hu-01/T2-diseno-formulario-registro.md */
 :root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
-  --code-bg: #f4f3ec;
-  --accent: #aa3bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --accent-border: rgba(170, 59, 255, 0.5);
-  --social-bg: rgba(244, 243, 236, 0.5);
-  --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
-
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
-
-  font: 18px/145% var(--sans);
-  letter-spacing: 0.18px;
-  color-scheme: light dark;
-  color: var(--text);
-  background: var(--bg);
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  @media (max-width: 1024px) {
-    font-size: 16px;
-  }
+  --color-principal: #1f3a5f;
+  --color-error: #b42318;
+  --color-exito: #1e6b3a;
+  --color-borde: #c5ccd6;
+  --color-fondo: #f5f7fa;
+  --color-texto: #1d2433;
+  --color-secundario: #5a6472;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  color: var(--color-texto);
+  background: var(--color-fondo);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
-    --border: #2e303a;
-    --code-bg: #1f2028;
-    --accent: #c084fc;
-    --accent-bg: rgba(192, 132, 252, 0.15);
-    --accent-border: rgba(192, 132, 252, 0.5);
-    --social-bg: rgba(47, 48, 58, 0.5);
-    --shadow:
-      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
-  }
-
-  #social .button-icon {
-    filter: invert(1) brightness(2);
-  }
+* {
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
 }
 
-#root {
-  width: 1126px;
-  max-width: 100%;
+a {
+  color: var(--color-principal);
+}
+
+.cabecera {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background: white;
+  border-bottom: 1px solid var(--color-borde);
+}
+
+.cabecera nav {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.marca {
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+.contenido {
+  max-width: 960px;
+  margin: 32px auto;
+  padding: 0 16px;
+}
+
+.tarjeta {
+  max-width: 400px;
   margin: 0 auto;
-  text-align: center;
-  border-inline: 1px solid var(--border);
-  min-height: 100svh;
+  padding: 24px;
+  background: white;
+  border: 1px solid var(--color-borde);
+  border-radius: 8px;
+}
+
+.subtitulo {
+  color: var(--color-secundario);
+  margin-top: -8px;
+}
+
+.campo {
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
+  gap: 4px;
+  margin-bottom: 16px;
 }
 
-h1,
-h2 {
-  font-family: var(--heading);
-  font-weight: 500;
-  color: var(--text-h);
+.campo label {
+  font-weight: 600;
 }
 
-h1 {
-  font-size: 56px;
-  letter-spacing: -1.68px;
-  margin: 32px 0;
-  @media (max-width: 1024px) {
-    font-size: 36px;
-    margin: 20px 0;
-  }
-}
-h2 {
-  font-size: 24px;
-  line-height: 118%;
-  letter-spacing: -0.24px;
-  margin: 0 0 8px;
-  @media (max-width: 1024px) {
-    font-size: 20px;
-  }
-}
-p {
-  margin: 0;
-}
-
-code,
-.counter {
-  font-family: var(--mono);
-  display: inline-flex;
+.campo input,
+.campo select {
+  padding: 8px 10px;
+  font: inherit;
+  border: 1px solid var(--color-borde);
   border-radius: 4px;
-  color: var(--text-h);
 }
 
-code {
-  font-size: 15px;
-  line-height: 135%;
-  padding: 4px 8px;
-  background: var(--code-bg);
+.campo input[aria-invalid='true'] {
+  border-color: var(--color-error);
+}
+
+.campo-ayuda {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--color-secundario);
+}
+
+.campo-error {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--color-error);
+}
+
+.boton {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  font: inherit;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background: var(--color-principal);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.boton:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.boton-enlace {
+  font: inherit;
+  color: var(--color-principal);
+  background: none;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.aviso-error {
+  padding: 8px 12px;
+  color: var(--color-error);
+  background: #fdecea;
+  border-radius: 4px;
+}
+
+.aviso-exito {
+  padding: 8px 12px;
+  color: var(--color-exito);
+  background: #e9f5ee;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.pie-formulario {
+  margin-top: 16px;
+  text-align: center;
 }
