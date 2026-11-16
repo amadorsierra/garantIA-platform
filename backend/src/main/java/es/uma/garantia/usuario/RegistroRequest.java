@@ -22,6 +22,7 @@ public record RegistroRequest(
 
 		@NotBlank(message = "La contraseña es obligatoria")
 		@Size(min = 8, max = 64, message = RegistroRequest.MENSAJE_PASSWORD)
+		@Pattern(regexp = "^(?=.*[A-Za-z])(?=.*[0-9]).*$", message = RegistroRequest.MENSAJE_PASSWORD)
 		String password) {
 
 	static final String MENSAJE_NOMBRE = "Usa de 3 a 30 caracteres: letras, números, punto, guion o guion bajo";

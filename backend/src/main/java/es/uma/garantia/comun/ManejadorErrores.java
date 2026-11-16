@@ -15,6 +15,7 @@ import org.springframework.web.method.annotation.MethodArgumentTypeMismatchExcep
 import es.uma.garantia.admin.CambioRolNoPermitidoException;
 import es.uma.garantia.admin.UsuarioNoEncontradoException;
 import es.uma.garantia.caso.CasoNoEncontradoException;
+import es.uma.garantia.usuario.ContrasenaDebilException;
 import es.uma.garantia.usuario.EmailYaRegistradoException;
 
 /** Convierte las excepciones en respuestas JSON con el formato de RespuestaError. */
@@ -79,5 +80,12 @@ public class ManejadorErrores {
 	@ResponseStatus(HttpStatus.CONFLICT)
 	public RespuestaError cambioRolNoPermitido(CambioRolNoPermitidoException excepcion) {
 		return RespuestaError.de(excepcion.getMessage());
+	}
+
+	/** 400 · La contraseña contiene el nombre de usuario o el correo (HU-01 T6). */
+	@ExceptionHandler(ContrasenaDebilException.class)
+	@ResponseStatus(HttpStatus.BAD_REQUEST)
+	public RespuestaError contrasenaDebil(ContrasenaDebilException excepcion) {
+		return new RespuestaError(MENSAJE_DATOS_NO_VALIDOS, Map.of("password", excepcion.getMessage()));
 	}
 }

@@ -23,7 +23,24 @@ public class RegistroService {
 			throw new EmailYaRegistradoException();
 		}
 
+		comprobarQueNoContieneDatosPersonales(datos.password(), datos.nombreUsuario(), email);
+
 		String passwordHash = passwordEncoder.encode(datos.password());
 		return usuarios.save(new Usuario(datos.nombreUsuario(), email, passwordHash));
+	}
+
+	/**
+	 * Una contraseña que contiene el nombre de usuario o el correo es fácil de adivinar
+	 * para quien conoce la cuenta (HU-01 T6).
+	 */
+	private void comprobarQueNoContieneDatosPersonales(String password, String nombreUsuario, String email) {
+		String passwordMinusculas = password.toLowerCase();
+		String parteLocalEmail = email.substring(0, email.indexOf('@'));
+
+		boolean contieneNombre = passwordMinusculas.contains(nombreUsuario.trim().toLowerCase());
+		boolean contieneEmail = parteLocalEmail.length() >= 3 && passwordMinusculas.contains(parteLocalEmail);
+		if (contieneNombre || contieneEmail) {
+			throw new ContrasenaDebilException();
+		}
 	}
 }
