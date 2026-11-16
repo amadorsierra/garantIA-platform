@@ -266,3 +266,17 @@ a {
   background: var(--color-fondo);
   border-radius: 8px;
 }
+
+/* HU-16 T5 · Paginación */
+.paginacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.paginacion button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
