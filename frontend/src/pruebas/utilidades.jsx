@@ -21,6 +21,17 @@ export function simularFetch(...respuestas) {
   return mock
 }
 
+// Sustituye fetch por un mock que responde según la URL pedida.
+// manejador(url) devuelve { estado, cuerpo } o lanza un error para simular que no hay conexión.
+export function simularApi(manejador) {
+  const mock = vi.fn(async (url) => {
+    const { estado, cuerpo } = manejador(url)
+    return respuestaJson(estado, cuerpo)
+  })
+  vi.stubGlobal('fetch', mock)
+  return mock
+}
+
 // Renderiza la aplicación (o una parte) con router y sesión, empezando en la ruta indicada
 export function renderizar(elemento, { ruta = '/', rutas = null } = {}) {
   return render(
