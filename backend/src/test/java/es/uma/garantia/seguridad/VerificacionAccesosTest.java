@@ -3,6 +3,7 @@ package es.uma.garantia.seguridad;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.httpBasic;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -45,6 +46,7 @@ class VerificacionAccesosTest extends PruebaIntegracion {
 	private enum Endpoint {
 		LISTA_CASOS(Permiso.CASOS_LEER),
 		CATEGORIAS(Permiso.CASOS_LEER),
+		ANALIZAR_PRIVACIDAD(Permiso.CASOS_PUBLICAR),
 		LISTA_USUARIOS(Permiso.ROLES_GESTIONAR),
 		CAMBIAR_ROL(Permiso.ROLES_GESTIONAR),
 		AUDITORIA(Permiso.AUDITORIA_CONSULTAR);
@@ -76,6 +78,9 @@ class VerificacionAccesosTest extends PruebaIntegracion {
 		return switch (endpoint) {
 			case LISTA_CASOS -> get("/api/casos");
 			case CATEGORIAS -> get("/api/casos/categorias");
+			case ANALIZAR_PRIVACIDAD -> post("/api/privacidad/analizar")
+					.contentType(MediaType.APPLICATION_JSON)
+					.content("{\"texto\": \"Hola\"}");
 			case LISTA_USUARIOS -> get("/api/admin/usuarios");
 			case CAMBIAR_ROL -> put("/api/admin/usuarios/{id}/rol", idObjetivo)
 					.contentType(MediaType.APPLICATION_JSON)

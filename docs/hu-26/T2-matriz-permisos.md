@@ -23,6 +23,7 @@ Parte de los permisos identificados en la T1 y fija qué rol puede usar cada end
 | `GET /api/auth/yo` | HU-01 / HU-26 | Cualquier usuario con sesión | 401 | — |
 | `GET /api/casos` | HU-16 | `CASOS_LEER` | 401 | 403 |
 | `GET /api/casos/{id}` | HU-16 | `CASOS_LEER` | 401 | 403 |
+| `POST /api/privacidad/analizar` | HU-08 | `CASOS_PUBLICAR` | 401 | 403 |
 | `PUT /api/admin/usuarios/{id}/rol` | HU-26 | `ROLES_GESTIONAR` | 401 | 403 |
 | `GET /api/admin/auditoria-roles` | HU-26 | `AUDITORIA_CONSULTAR` | 401 | 403 |
 | Cualquier otra ruta | — | Cualquier usuario con sesión | 401 | — |

@@ -89,7 +89,8 @@ const REGLAS = [
   },
   {
     tipo: 'NOMBRE_COMPLETO',
-    patron: new RegExp(`\\b(?:${NOMBRES.join('|')})(?:\\s+(?:(?:de|del|de la)\\s+)?${PALABRA_MAYUS}){1,3}`, 'g'),
+    // Sin \\b delante: solo reconoce letras sin tilde y no encontraría «Álvaro» u «Óscar» (corregido en la T6)
+    patron: new RegExp(`(?<![\\p{L}\\d])(?:${NOMBRES.join('|')})(?:\\s+(?:(?:de|del|de la)\\s+)?${PALABRA_MAYUS}){1,3}`, 'gu'),
     valida: nombreCompletoValido
   }
 ]

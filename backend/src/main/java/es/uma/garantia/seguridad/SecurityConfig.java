@@ -38,6 +38,7 @@ public class SecurityConfig {
 						.requestMatchers(HttpMethod.POST, "/api/auth/registro").permitAll()
 						.requestMatchers("/error").permitAll()
 						.requestMatchers("/api/casos/**").hasAuthority(Permiso.CASOS_LEER.name())
+						.requestMatchers("/api/privacidad/**").hasAuthority(Permiso.CASOS_PUBLICAR.name())
 						.requestMatchers("/api/admin/auditoria-roles").hasAuthority(Permiso.AUDITORIA_CONSULTAR.name())
 						.requestMatchers("/api/admin/**").hasAuthority(Permiso.ROLES_GESTIONAR.name())
 						.anyRequest().authenticated());
