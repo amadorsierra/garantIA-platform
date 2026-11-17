@@ -1,0 +1,70 @@
+# Conjunto de evaluación de HU-08 (T4). Una línea por texto: texto;tipos que contiene (separados por |, vacío si ninguno).
+# Las etiquetas son lo que una persona marcaría como dato personal, aunque el detector no lo encuentre.
+# El separador es ';', así que los textos no pueden llevar punto y coma.
+texto;tipos
+Mi DNI es 12345678Z y la tienda no me deja devolver el móvil;DNI
+Adjunto copia del DNI 87654321X para que comprobéis la compra;DNI
+Soy extranjera, mi NIE es X1234567L;NIE
+Con NIE Y-1234567-X no me aceptan la garantía;NIE
+Llamadme al 612 345 678 si sabéis algo;TELEFONO
+Mi móvil es el +34 612345678 por si alguien quiere ayudar;TELEFONO
+Teléfono fijo 952 12 34 56 de la tarde;TELEFONO
+El número de la tienda es el 900 123 456 pero no contestan;TELEFONO
+Escribidme a lucia.martin@gmail.com y os paso la factura;EMAIL
+Mi correo: pepe_92@hotmail.es;EMAIL
+Que me devuelvan el dinero al ES91 2100 0418 4502 0005 1332;IBAN
+IBAN ES7921000813610123456789 para el reembolso;IBAN
+Pagué con la tarjeta 4111 1111 1111 1111 y no me han devuelto nada;TARJETA
+Me cobraron dos veces en la 5500-0000-0000-0004;TARJETA
+Vivo en la Calle Larios 5 de Málaga;DIRECCION
+Enviadlo a Avda. de Andalucía 12 por favor;DIRECCION
+La entrega era en Plaza Mayor, 3 y nunca llegó;DIRECCION
+Dirección: C/ Granada 27 2ºB;DIRECCION
+Paseo del Parque 14 es donde lo recogí;DIRECCION
+Me llamo María García López y compré un portátil;NOMBRE_COMPLETO
+Soy Antonio Pérez y la lavadora pierde agua;NOMBRE_COMPLETO
+Firmado: Lucía Fernández Ruiz;NOMBRE_COMPLETO
+El técnico se llamaba José Luis Martínez;NOMBRE_COMPLETO
+Soy Carmen de la Torre y tengo el mismo problema;NOMBRE_COMPLETO
+Soy María García López con DNI 12345678Z y teléfono 612 345 678;NOMBRE_COMPLETO|DNI|TELEFONO
+Escribid a ana.ruiz@correo.es o al 699 111 222;EMAIL|TELEFONO
+Javier Sánchez Gil, Calle Alcalá 120, Madrid;NOMBRE_COMPLETO|DIRECCION
+Para el reembolso: ES91 2100 0418 4502 0005 1332, a nombre de Pedro Gómez Sanz;IBAN|NOMBRE_COMPLETO
+El portátil dejó de encender a los 8 meses de comprarlo;
+La lavadora pierde agua desde el segundo mes de uso;
+El número de pedido es 12345678A y no me contestan;
+Número de serie 4111111111111112 en la etiqueta;
+El pedido 1234567890 lleva tres semanas sin llegar;
+Lo compré el 12/03/2025 por 599 euros;
+Mi iPhone 13 Pro se apaga solo con el 40% de batería;
+El Samsung Galaxy S21 tiene la pantalla verde;
+Lo compré en El Corte Inglés y no aceptan la devolución;
+MediaMarkt dice que la garantía la cubre el fabricante;
+La referencia del producto es ES-2024-00123;
+El código de la factura es ES12 3456 7890 1234 5678 9012;
+María me dijo que a ella le pasó lo mismo;
+La calle estaba cortada y no pudieron entregarlo;
+El modelo es el WM 7120 de 7 kg;
+Pagué 1.299,99 euros y a los 3 meses se rompió;
+Han pasado 15 días hábiles y no responden;
+El ticket tiene el número 2024 0001 2345 6789;
+Hablé con atención al cliente de Amazon y me dieron largas;
+Según la ley la garantía es de 3 años desde 2022;
+El cargador de 65 W se calienta mucho;
+Juan Carlos de la tienda me atendió muy bien;
+El paquete pesaba 2,5 kg y llegó roto;
+Llevo 612 días esperando una respuesta;
+Llamé al teléfono de atención y nada;
+Si alguien sabe algo que me escriba por privado;
+Soy maria garcia lopez y no me hacen caso;NOMBRE_COMPLETO
+Vivo en la calle Mayor de mi pueblo;DIRECCION
+Mi teléfono es seis uno dos tres cuatro cinco seis siete ocho;TELEFONO
+Mi correo es lucia arroba gmail punto com;EMAIL
+Me atendió Íñigo Urrutia en la tienda de Bilbao;NOMBRE_COMPLETO
+Mi tarjeta acaba en 1234 y me cobraron dos veces;
+El DNI que puse en la factura era el 12345678-Z;DNI
+Contactad con Laura Gómez en el 655 44 33 22;NOMBRE_COMPLETO|TELEFONO
+Enviad la nueva al Camino de Ronda 45 en Granada;DIRECCION
+El reembolso al ES79 2100 0813 6101 2345 6789 no ha llegado;IBAN
+Mi mujer Sofía Navarro también lo compró;NOMBRE_COMPLETO
+Lo dejé en la Avenida de la Constitución, 21;DIRECCION
