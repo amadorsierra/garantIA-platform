@@ -3,6 +3,7 @@ import Cabecera from './componentes/Cabecera'
 import RutaPrivada from './componentes/RutaPrivada'
 import CasoDetallePagina from './paginas/CasoDetallePagina'
 import CasosPagina from './paginas/CasosPagina'
+import ComprobarTextoPagina from './paginas/ComprobarTextoPagina'
 import EntrarPagina from './paginas/EntrarPagina'
 import RegistroPagina from './paginas/RegistroPagina'
 
@@ -17,6 +18,7 @@ export default function App() {
           <Route path="/entrar" element={<EntrarPagina />} />
           <Route path="/casos" element={<RutaPrivada><CasosPagina /></RutaPrivada>} />
           <Route path="/casos/:id" element={<RutaPrivada><CasoDetallePagina /></RutaPrivada>} />
+          <Route path="/comprobar-texto" element={<RutaPrivada><ComprobarTextoPagina /></RutaPrivada>} />
         </Routes>
       </main>
     </>
