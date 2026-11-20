@@ -10,6 +10,8 @@ export default function Cabecera() {
       <nav>
         {cuenta ? (
           <>
+            <Link to="/casos">Casos</Link>
+            {cuenta.permisos.includes('CASOS_PUBLICAR') && <Link to="/comprobar-texto">Comprobar texto</Link>}
             <span className="usuario-actual">{cuenta.nombreUsuario}</span>
             <button type="button" className="boton-enlace" onClick={salir}>Salir</button>
           </>
