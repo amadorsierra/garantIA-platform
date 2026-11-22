@@ -1,0 +1,67 @@
+(Transcrito por TurboScribe. Actualizar a Ilimitado para eliminar este mensaje.)
+
+Bueno. Buena, buena. Hola, ¿qué tal? Hola, ¿cómo ando? Vale, vamos a empezar, vamos a empezar.
+
+Bueno, bueno, a todos, vamos a hacer la primera reunión del Spring 1, unos 15 minutos más o menos. Vamos a cronometrarla, ¿vale? Y nada, este Spring va ahí del 9 al 22 de noviembre. Y yo había pensado que como esta es la primera reunión del Spring que podíamos vamos a empezar repartiendo las tareas, como lo veis.
+
+Ya lo voy. Ya lo voy. Bien, bien.
+
+Vale, pues, primero de todo que empiece Javi, que es el Product Owner del equipo, diciendo cuál es el objetivo del screen. Pues eso. Voy a empezar con nuestro objetivo.
+
+El objetivo del screen es que un usuario pueda crear su cuenta, entrar con un rol con permisos controlados y consultar los casos publicados. Esto sería en tres historias. La primera con la creación de la cuenta, la 26 con los permisos en un rol y la 16 con la consulta de los casos.
+
+Somos un total de 18 puntos. La octava historia de usuarios se queda para el screen 2. Y ahora, sobre el tema del orden de implementación, empezaremos con la 26 que tiene que arrancar la primera debido a que el estado de casos de la 16 necesita ese control de acceso. Y la primera estudio de usuario iría en paralelo con la historia de la 16 al final.
+
+Estoy en el hilo de requisitos y les pongo las dudas en menos de 24 horas a poder ser. Y lo más importante es que entre hoy y mañana revisaré con José la prueba de esa estación, ya que esto es fundamental porque sin ellas nadie podría empezar a programar. Y es importante que lo tengamos con todo antes.
+
+Perfecto, Javi. ¿Tú la prueba de esta estación, José? ¿Cómo las tienes que tú vas primero? Sí, yo tengo la tarea 0 de cada historia de usuario. Y la tarea 1 también de la historia de la 16 que tengo identificada los permisos de cada rol.
+
+La tarea 0 es que vencen hoy y voy justo de tiempo, la verdad. Son 6 horas entre las 3 y no sé si me voy a poder, la verdad. Pero bueno, también quiero terminar... Si no, pues que alguien te ayude, José.
+
+Si no, yo como tengo el listado de los casos, en teoría los criterios voy bien. ¿Lo puedo ayudar? Vale, perfecto. Si lo puedo ayudar.
+
+Si quiere dialogarlo después más tarde, ya no lo decía el resto del equipo. Vale, pues también quiero terminar hoy la de la historia de la 16, que también es que te bloquea más gente y de punto allá puedo dar la tarea 1 de los permisos. Y mañana ya por la de la historia de usuario 1 y la de la 16.
+
+Bueno, yo creo que eso sí me va a dar tiempo, ¿no? Vale, perfecto. Pues ya está, luego lo termina y ya discutimos su truco. Y, Joan, vamos para tú.
+
+Vale, yo tengo los dos modelos de datos y uno en point, que es la tarea 3 de la historia de usuario 26, que es el modelo de role y permisos. La tarea 3 de la historia de usuario 1, que es el modelo de usuarios. Y luego también la tarea 3 de la historia de usuario 16, que es el en point para consultar publicaciones.
+
+Pues esta semana hago los dos modelos, empezando por el de role, que si no me equivoco necesitan a Amador y Carlos. Y luego, como están relacionados, los tendré los dos para el jueves. Y luego el en point lo dejo para la semana que viene porque espera el control de acceso.
+
+Y luego también, reviso el en point del registro de Fabian y el control de acceso de Amador y Carlos. Y dirá que eso es todo. Perfecto.
+
+¿Quién es el siguiente? Yo o yo. Yo tengo la tarea 2 de la historia de usuario 26, la matriz de permisos. Y la tarea 5, la asignación y comprobación de roles.
+
+Que eso, bueno, lo voy a hacer en pareja con Amador, que ya hemos quedado en acero. Y bueno, la matriz luego mañana. Y bueno, eso porque necesito que lo identifique José en la tarea 1. Y a partir del jueves, Amador y yo nos vamos a poner en pareja y vamos a hacer primero el control de acceso y después los roles, que lo vamos a hacer los dos juntos.
+
+Y bueno, también la semana que viene, reviso la visualización de caso de Tomás, que va a hacer él. Perfecto. Y... Está bien, ¿no, Amador? Claro, lo que ha dicho Carlos, lo ha revisado.
+
+Tú te pones con él, ¿no? Sí, sí. Yo es que este print tengo dos tareas y las dos son de seguridad. Por eso la hago en pareja con Carlos.
+
+Por si algo se nos escapa, pues, tener la opinión de dos personas, ¿no? Y no una. Pero bueno, la primera es la tarea 4 de la dictoria de usuario 26, que básicamente es el control de acceso a los endpoints. Y como he dicho antes, pues la vamos a hacer con Carlos.
+
+Y habría que definir, por ejemplo, los roles que pueden llamar a cada endpoint, proteger la ruta en el backend, también comprobar que un usuario sin permiso recibe el error, ¿no? Correspondiente. Y bueno, pero bueno, la idea es definir primero la matriz de roles y los permisos entre los dos y después ya nos podemos repartir los controladores para ir más rápido, ¿no? Pero bueno, después tengo la segunda tarea que tomo asignada en la 6 de la dictoria de usuario 1 que trata sobre el almacenamiento seguro de contraseña y esa la hago con Fabián. Básicamente, te he pensado en no guardar nunca la contraseña ante esto plano, sino en un hash con un algoritmo... bueno, que me haga el hash.
+
+Sí, para que sea más seguro, sí. También tendríamos que revisar que la contraseña no aparezca, ni que no se nos escape ni en ninguna respuesta de la API. Y bueno, sobre el orden, esta semana me centraré en el control de acceso porque la historia de usuario 16 depende de él y no quiero que el equipo pueda quedar bloqueado.
+
+Y bueno, mi objetivo ya es tenerlo integrado en la rama principal si es posible ya te viene estrés y listo. Entonces, Fabián, a ti te viene bien empezar, por ejemplo, el lunes 16 por la tarde o quieres moverlo a otro día o... Sí, yo creo que bien. El lunes, yo creo que después de la universidad nos podemos poner y hacerlo.
+
+Yo tengo la... Sí, después de la universidad nos podemos hacerlo y hachas. Yo creo que tengo la tarea 4, creo, nada más de... de la historia de usuario 1 que es básicamente el endpoint de registro. Que es la tarea más larga de la historia si no recuerdo mal.
+
+Pero básicamente con la ayuda de la contraseña y tal pues... yo creo que no se nos va a complicar mucho. Voy a empezar a hacer los jueves básicamente porque necesito que José tenga la tarea 0 de la historia extra y que Juanjo tenga el modelo de usuario. Y he pensado hacerlo con TDD.
+
+Primero básicamente que hace la prueba del correo que se ha duplicado. Básicamente si intenta registrarte con un correo que ya existe no te va a dejar registrarte. Y después pues ya con el resto de criterios de las contraseñas y tal que como bien han mencionado tú con el hash yo lo veo bastante buena idea.
+
+Y eso y ya la semana que viene lunes y al final podemos y yo lo que decir. Cerramos tu y yo amado lo de la contraseña y reviso la asignación de errores de Carlos y el endpoint de la consulta de Juanjo. Yo creo que ya por mil dictos estaría.
+
+¿Quién no ha hablado todavía? ¿Quién le toca? Yo tengo que hacer un nombre. Yo voy a quitarte en este spring en la interfaz. Yo tengo la tarea 2 de la historia de usuario 1 que tengo que hacer el formulario de registro y eso yo creo que no tengo medianamente fácil. 
+
+Y luego la historia de usuario 16, la tarea 1 también que es como se muestran los casos. En la tarea 2 la interfaz del dictado tengo que hacerla y la visualización de los casos y los detalles que es la tarea 4 sino yo. Esta semana me quiero poner piezo mañana con el formulario que yo creo que lo tengo hecho porque si lo quiero tener mañana porque ahí tú lo necesitas creo pero también.
+
+Y ya el resto los que los jueguen el bienes puedo terminar el resto sobre todo la historia de usuario 16 la tengo ya anterior. La visualización me intentaré poder meter fin de semana y ya cuando jose hablamos tu y yo y cuando tengamos dos tiempos te ayudo con la prueba de historia de usuario y ya está. Reviso luego el formulario cuando tengas a Adri y la paginación de Javi y Coquillo.
+
+Tú es lo bien jose que te he hecho una manilla y si, si, la graga que me viene porque si no, yo ahí me he apretado. Vale, vale. Si cualquiera necesita ayuda con lo que sea o si de repente alguien levanta trabajo o ya está se dice por el grupo y finitao.
+
+Vale, pues voy a seguir yo y que luego vaya Javi y ya después chapamos. Vale, yo las tareas que tengo como developer para desarrollar código la tarea 1 de la historia de usuario 1 que básicamente analiza los datos para los registros que yo creo que la puedo terminar aún, sinceramente no es mucha cosa y luego a ver cuantos mil vale, la 5 también la 5 también es mía que es básicamente el formulario de registro de la web que tampoco es tanto que lo que he pensado dejarlo y empezarlo el lunes 16 para y tomarlo con calma cuando tomaste el diseño ya hecho que lo ves bien ¿no? Que si no cualquier cosa pues me dice tampoco y ya está como soy también o sea como me ha tocado el Scrum Master este primer Spring que bueno esos rotatorios no sé si lo dije pero eventualmente el siguiente lo he tocado a otra persona eso, como me ha tocado a mí yo tengo que hacer me di los indicadores que lo tengo que tener hecho el Bienes 13 que le dedicaré un ratillo tampoco mucho trabajo y al final del Spring también lo tengo que hacer y ya está y luego dependo también de Javi porque porque tengo que revisar la verificación de los permisos que es la parte de Javi ¿vale? que lo está mirando así por encimilla y eso Javi ¿a ti qué te toca? Pues yo como developer tengo menos media carga yo tengo la parte de las tareas 6 de la historia de usuario 26 que era la parte de verificar que nadie acceda a las funciones no autorizadas y todo y luego la parte de verificar que nadie accede a las funciones no autorizadas de este todo bien controlado y que no haya terceros que entran luego la parte de la tarea 5 de la historia de usuario 16 que es la parte de la paginación estas dos tareas dependen de la parte del control acceso y la parte del empleo de consulta que tengo que mirar esa parte y creo que tengo tiempo para poder implementarlo la semana que viene supongo creo que de entre el martes al joder podría hacerlo si no hay problema ¿vale? ¿ya está? al final si cualquiera tiene algún tipo de problema o lo que he dicho antes si avanza más de la cuenta que lo diga que al final profesor lo que me explico es que bueno primero que las reuniones tienen que ser ágiles, rapidillas, que no sé cuánto llevamos pero ahora después lo miraré y que eso, que nos tenemos que ir adaptando si al final alguien tiene alguna complicación pues que pille a ir a ayudar los demás que somos ocho días tocados y entonces voy a apuntar las cosas y que más o menos voy a hacer un resumen ya que cada uno me vaya diciendo si ha apuntado algo o está bien apuntado para la semana José está con las pruebas de aceptación que le ayuda a tomar con la historía de usuario 16, eso lo apunta a bien si vale los diseños modelos si vale, que con los diseños los modelos están apuntados a tomar Juanjo Carlos y yo yo también que desde los jueves y luego a Amado y Carlos tienen el control acceso y Fabián el endpoint de registro correcto efectivamente pues hasta la semana que viene el formulario la contraseña de la historia de usuario 1 toda la historia de usuario 16 hay que aplicarse y verificación de permiso y ya está, el bienes 20 tenemos que tener esto y hacer una pequeña demo y ya está y el 22 termina el spring y tenemos que hacer el spring review te ve como hemos trabajado y eso y ya está mi parte me tocará hacer bueno por eso el spring master básicamente los review ya está apuntado riesgos vale, uno, las pruebas de aceptación que van justillas que eso lo que he dicho antes que lo habléis, tomáis tujos y ya luego lo que lo que dialogué y por no lo decía los demás y luego que la historia de usuario 16 depende del control de acceso que entonces Amado y Carlos, si los jueves que no llegáis al bienes bien pues que eso que no los comentéis y nos echamos una mano y ya está bueno listo, comprobar que el click up las subtareas que tiene así cada uno tenga su nombre y este bien y si hay cualquier problema o eso lo comentamos por el grupo pues ya está mañana mañana más y mejor, chicos, a la misma hora para tener ya un horario clavado y estar organizado todo venga, por favor venga venga adiós adiós
+
+(Transcrito por TurboScribe. Actualizar a Ilimitado para eliminar este mensaje.)

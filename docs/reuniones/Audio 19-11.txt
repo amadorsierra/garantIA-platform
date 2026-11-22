@@ -1,0 +1,67 @@
+(Transcrito por TurboScribe. Actualizar a Ilimitado para eliminar este mensaje.)
+
+Buenos días. Buenos días, buenos días. Buenos días, hola.
+
+Bueno, penúltima reuniendo el Spring. Eso, las tres preguntas de siempre. ¿Qué hicimos ayer? ¿Qué acercó al equipo al objetivo del Spring? ¿Qué voy a hacer hoy? ¿Qué hacer qué? Al equipo al objetivo del Spring y si hay algo que os bloquee.
+
+Y listo, un poco más en el orden del tablero. Como clicaba abierto, Borfa. Y ya está.
+
+Que al final, pues, tenemos que hacer la... o sea, tenemos que ir plantando las mediciones y eso, y listo. Entonces, el primero es Javier. Vale.
+
+Yo ayer en el refinamiento, confirmé que la historia del 2008, sigue en el Spring. Y hemos dejado ya la historia 2 de publicar casos. La historia 3 también para... están ya listas para el Spring 2. Y... esta mañana no tenía mucho tiempo porque tenemos ahora luego un examen.
+
+Algunos de nosotros, así que ya esta tarde seguiremos. Cual... cualquier tipo de dudo o problema lo hablamos por el grupo y lo vamos viendo. Mañana en la demo interna verificaré los criterios de la historia 8 y ver si la tarea 7 está integrada.
+
+Por lo demás, pues, seguimos. ¿Bloqueo tiene alguno o siempre que...? No, no, también. Ah, bueno.
+
+Perfecto. Puede el siguiente, José. Hola, buenas.
+
+Pues, yo durante ayer terminé de repasar la aprobacitación de la historia de la historia 8. Y las terminé. Y yo por mi parte no tengo ningún examen, así que hoy voy a poder trabajar con total normalidad. Luego, a lo largo de la mañana he estado pasando las pruebas de aceptación de la historia 8 sobre la rama de Amador.
+
+Y de momento los criterios 3 y 4 ya pasan. Pero el quinto, que es de no publicar hasta haber visto la pertencia, todavía sigue en rojo. Tengo que revisarlo.
+
+Y, bueno, durante el resto del día pues ya me he encargado de preparar los escenarios de aceptación de la historia de 8 y 2 ya degarán el segundo screen, si lo hacemos. Y bloqueo, actualmente no tengo ninguno. Vale, perfecto.
+
+Pues, el siguiente es Juanjo. Vale, se me escucha bien. Sí, sí.
+
+Vale, pues yo ayer durante el rescrenamiento estoy no estimando el modelo de publicación de la historia de 8 y 2. Y yo tampoco tengo examen, así que hoy voy a poder aprovechar para revisar el código de las tres historias y poder apuntar por si les mejora de cara al siguiente screen. Y de momento sin modificar nada de lo que ya funciona. Y sin bloqueo ni nada.
+
+Perfecto. Pues, el siguiente Carlos. Hola, sí me toca mirar.
+
+Hoy mira, ayer lo que estuve haciendo fue que pasé la batería completa de prueba a la rama principal. Y eso pues todo bien, la verdad, todo en verde. Luego también dejé preparado los datos de ejemplo que es para demo.
+
+Y hoy, yo no tengo examen, por suerte. Y no me queda nada en el screen. O sea que voy a repasar la documentación de la historia de usuario 26.
+
+Y ya está. Y luego de bloqueo, nada, todo bien. Vale, perfecto.
+
+Por eso sí, lo que no tenéis examen si vais haciendo alguna cosilla de otra pues está perfecto, muchas gracias. Pues, el siguiente es Amador. Bueno, pues yo ayer empecé con la tarea 7, que es el Diálogo de Avertencia. 
+
+Con TDD tengo hecho ya los criterios 3 y 4. Que son que el diálogo aparece y dice qué datos ha detectado y dónde. Luego me falta el criterio 5, que es la publicación que no se haga hasta que el usuario haya visto la abvertencia y aplicar los estilos de Tomás. Esta mañana me he podido avanzar porque yo trabaja y luego la he dedicado para estudiar para el examen de esta tarde.
+
+Así que el APOD request no va a llegar hoy como dije ayer, pero para mañana seguro que está. Mañana a primera hora me pondré con el criterio 5 y los estilos y abriré la APOD request ya por la tarde. Mira, Pablo, qué onda.
+
+Aparte de lo que he dicho. Vale, vale, voy a pasar. Entonces, ya mañana se termina con tiempo.
+
+Vale, pues el siguiente es Fabián. Sí, buena. Pues yo ayer termine la documentación del módulo de detección que lo que hice fue mirar qué datos detecta, con qué método y cómo se añaden los nuevos.
+
+Lo implementé así. Y hoy tampoco he tenido mucho tiempo ni por la mañana ni por la tarde porque también tengo el examen de las activas. Pero mañana había estado totalmente disponible para hacerlas de muy interna y bloqueos no sufríos ninguno.
+
+Vale. Pues listo. Pues el siguiente es Tomaso.
+
+Hola, ¿te escuchan? Sí. Yo no tenía ninguna tarea pendiente o sea, lo único que tengo es la revisión de la tarea 7 y yo también tengo el examen. O sea, que no voy a tener mucho tiempo de revisarlo. 
+
+Si te da tiempo a 2 pues intento ponerme pero que si no lo hacemos mañana y ya está sin ponerme, lo que me queda es a tu pull request y por qué llamar. Si él ha dicho que al final lo hace para mañana por la tarde, pues ya está mañana cuando él habrá la pull request que te avise por el grupo y así ya luego tú lo miras con calma. Vale, pues me toca a mí.
+
+¿Bloqueas dicho que tenía o que no? No, yo ninguno. Vale, vale. Pues listo. 
+
+Yo ayer actual hice el click up. La sinera tarea 7 implica a Amador y a ti como revisor Tomán y puse las tareas que están terminadas de la historia de usuario 8 les cambié el estado a hecho y ya está. Por la tarde pasé el refinamiento y hoy como yo también tengo el examen de la actividad pues no tengo ni mucho tiempo ni por la mañana ni por la tarde.
+
+Entonces mañana mañana empezaré con la medición de indicadores y la terminaré cuando pueda y ya está. Y sin ningún bloqueo. Vale pues hago resumen de cómo amo y ya está.
+
+Las tres historias del Spring ya están, están en hecho el objetivo del Spring está cumplido y con tiempo la verdad y lo único que quedaría por hacer la tarea 7 que eso como sobre todo Amador que ha tenido el trabajo y tenemos el examen pues no tiene tiempo terminarla hoy pues ya está. La termina la termina mañana y tú la revisas mañana y listo. Y eso como vamos bien de tiempo pues propongo que la tarea 7 siga siendo de Amador y que la termine él que dijo que solo le queda el criteria 5 y si si fuese más justo de tiempo pues si diría que alguien le echa su mano pero bueno como vamos un poco sobra a Google está bien. 
+
+Y hasta tú la tú mañana la revisa en cuanto habrá la pull request o más y después la integramo en la demo y ya el viernes pasamos las pruebas y yo hago la medición de indicadores y listo. No sé si nuestro producto o uno lo ve bien o si tenía lo que decir. Si, si bien nada, básicamente mañana la tarea 7 si no está integrada antes de la demo pues la teoría 8 la volvemos al backlog con la tarea de la 0 a la 6 hecho y no la contamos en el del primer review pero vaya nuestro objetivo de experiencia cumplido igualmente así que hemos cumplido.
+
+Pues ya está. Pues lo repito por si alguien no nos enteraba ya está esta tarde los que tenemos el examen pues no vamos a poder hacer nada y eso José ha dicho que prepara los escenarios de la y usuario 2 de cada un segundo si lo tenemos que hacer Juanjo que va a notar las mejoras de código y Carlos va a repasar la documentación de la y usuario 26 y listo mañana Amado termina la la tarea 7 y abre la pull request por la tarde y en cuanto eso pase pues tomar la la revisa se integra y listo y ya faltaría hace de cada domingo el el spring review y la la mediciones y la retrospectiva y ya está bien todo el mundo lo tiene claro si si perfecto pues ya está pues entonces mañana se puede poder ir toda la misma o la cierto permiso o venga pues no vemos mañana Amado cuando si te da tiempo tenerlo ahí por la que sea escribe por whatsapp que yo me quedaré hasta tarde por si no puedo revisar y si no mañana sin problema no me ha dicho pero si te da tiempo pues me aviso venga perfecto venga chao chao chao chao chao
+
+(Transcrito por TurboScribe. Actualizar a Ilimitado para eliminar este mensaje.)
