@@ -1,0 +1,93 @@
+(Transcrito por TurboScribe. Actualizar a Ilimitado para eliminar este mensaje.)
+
+Bueno, última reunión de la semana, muy buenos días. Voy a repasar las preguntas. Son tres preguntas que hay que contestar a cada uno, que es, ¿qué hicimos ayer que acercó al equipo al objetivo del Spring? ¿Qué vamos a hacer hoy que acerca al equipo al objetivo del Spring? Y si hay algo que os bloquee. 
+
+Entonces, con el tablero abierto y saliendo las tres preguntas, vamos a ir por orden, uno a uno, contestándolos todas, y ya está. Allá ajustamos la carga, así que oye que comprobás que las fechas van bien. Y listo, esta tarde yo hago la medición de indicadores, y al final os digo por el grupo cómo vamos. 
+
+Y hasta el primero es Javi. Vale, pues yo básicamente ayer estuve revisando los roles y permisos de Juanjo y ya me estoy encargando de revisar todas las perlas que van saliendo y aceptando. Y mientras tanto, estoy empezando a avanzar un poco en lo que sería mi tarea sobre los métodos para detectar los datos personales, que mi tarea va al final, pero bueno, voy progresando un poco para cuando ya tengamos todos los previos sacar cuanto antes a perderla. 
+
+Yo tendré una primera comparación sobre los patrones que tienen un formato fijo, como el DNI, el teléfono, el correo, y modelos de reconocimiento de entidades para los nombres y versiones. Así que por lo demás, hoy debería de revisar las pruebas de aceptación del extraesuario 8 que la sacajosa debería haber, y nada, yo sigo revisando perles y por ahora sin plopiar ningún tipo de problema. Vale, perfecto. 
+
+Pues apuntado, y el siguiente es José. Bueno, yo ayer estuve durante toda la tarde que ya recibí el borrador de Adrián durante la tarde y puedo terminar a la 3 a 0 de la extraesuario 8. Hasta ahora yo tengo los listos los cuatro escenarios, que son el DNI, número 2 de teléfono, el correo electrónico y el en el que no hay ningún dato personal. Pero todavía me falta completar el en el que están los documentos junto y en el escenario en el que la publicación no se haga hasta que el usuario haya visto la pertenencia que le modificaría la aplicación. 
+
+Y pues a lo largo de hoy mi idea termina de esos dos escenarios, a ver si me dan tiempo y cuando termine se lo paso a Javi. Así que mi idea es que de hoy mismo listo a la 3 a 0. Y pues de cara la semana que viene lo que estaba sin nada que continuaba la 3 a 5 con Fabián. Y por último, lo que yo no tengo, no tengo ningún bloqueo que tenía ayer, pues lo pude resolver con el borrador que me pasaron.
+
+Vale, perfecto. Te sirvió el borrador en todo el gran. Sí, puede tenerlo.
+
+¿Cómo listo el síntema es panjo? Vale, yo ayer por la mañana ya termine el modelo de usuario, que es la 3 a 3 de la historia de usuario 1. Y se lo pase a Fabián antes de comer, así que ya puedo usarlo. Y luego hoy voy a empezar con el endpoint de la consulta de consulta de la historia de 16, que también es la 3 a 3. Y lo voy a hacer basándome en las pruebas que han preparado Jawsit y demás. Y luego también la idea es hacer primero listado y la aplicación de 10 a 10. 
+
+Y cuando Amador y Carlos tengan integrado el control de acceso, pues a partir de ahí ya añadir el filtro de permiso. Y luego ya para el lunes, pues tengo el diseño del flujo de la pertenencia de la historia de usuario 8, que también es la de 3. Y como ya habré empezado el endpoint, pues creo que puedo hacerlo para el lunes sin tener que pasarlo al martes. Y luego ya de temas de bloqueo y eso por mi parte ninguno. 
+
+Y la verdad es que voy a hacer más tranquilo que ayer. Vale, perfecto. Pues el siguiente es Carlos.
+
+Bueno, bueno, bien. Pues mira, yo ayer estuve con Amador y terminamos el endpoint que he faltado del control de acceso, que eso era la tarea 4 de la historia de usuario 26. Y nada, pues de eso todas las pruebas, el local estaba en verde y luego púrrecuerde también ya está abierta. 
+
+Que luego también, Juan José, que te iba a decir que estaba previsto que, si me la puedo revisar ahora, vaya, ha preparado nuestro mañano y lo puedo revisar, por favor. Si, si te tomo, terminemos. Vale, pues ya está. 
+
+Y hoy en cuanto a eso, pues empiezo con la asignación y la comprobación de errores, que esa es la tarea 5. Y nada, termino el lunes siguiente. Eso tal como dije ayer. Quiere bloqueo, bloqueo alguno.
+
+Bloqueo nada, todo bien, todo bien. Vale, vale, perfecto. Pues el siguiente, Amador.
+
+Yo confirmo lo de Carlos, que el control de acceso ya está en revisión y lo enteramos antes de comer. En la fecha del primer día, el viernes 13. Entonces, después nos pondremos con la tarea 5 de los roles y el lunes por la tarde empiezo ya con las contraseñas con Fabián, que es la tarea 6 de la historia usuario 1. Luego sobre la carga, con la tarea 6 de la historia usuario 8 a plaza para el miércoles de la semana que viene ya me cuadra. 
+
+Ya no lo veo como un riesgo porque vamos bien de tiempo. Y respecto a bloqueo, ninguno. Vale, perfecto. 
+
+Pues el siguiente, Fabián. Pues bueno, yo ayer con el modelo de usuario que hizo Juanjo, he podido avanzar bastante con el endpoint de registro, ya que con el modelo he podido hacer más pruebas, que he hecho ya los 4 primeros criterios, que serían la de los campos obligatorios, el formato del correo, el correo duplicado y los mensajes de error. Hoy haré la confirmación de cuenta creada y me queda el último criterio, acceder con la cuenta creada, que necesita el control de acceso entregrado. 
+
+El lunes por la mañana lo termino y podré abrir la pul recuesta que he dejado para la revisa. Ahora mismo de tiempo voy bien y bloqueo, no sucio ninguno. Vale, perfecto. 
+
+Pues el siguiente es Tomás. Sí, yo ayer termine la tarea 1 de la historia 16, la de cómo se muestra los casos, las tarjetas con los cítulos, el autor, la fecha, categoría. También he metido paginación de 10 por página y un mensaje, pues cuando no haya resultado. 
+
+Y esta tarde me voy a poner con la tarea 2, hacer la interfaz del listado. Y así ya la semana que viene por empezar directamente con la tarea 4, con la visualización de los casos. Y yo con lo que he estado haciendo no he tenido ningún bloqueo, de verdad, ha sido simple o no.
+
+Vale, perfecto. Vale, me toca. Pues yo como Dremeloper empecé el formulario de registro ayer y la tarea 5, la subtarea 5 del extra de usuario 1, con el diseño que me pasaste tu Tomás. 
+
+Y eso, tengo todos los campos y validaciones con sus pruebas. Utilizando el endpoint que hizo Fabián, y ya está por la tarde le pasé a José el borrador, que me alegro de la historia de usuario 8, la subtarea T1, que hoy lo cierro. Y voy a añadir la cuenta bancaria y la matrícula, que no estaban en el borrador, por si tienes que modificar algo. 
+
+Yo te lo digo si, vaya, que si no habías tenido en cuenta esos dos casos, pues después me lo comento y lo hablamos. Y ya lo que hayamos cambiado, pues lo decimos por el grupo. Vale, luego sí que me lo hablamos. 
+
+Y ya está. Vale, perfecto. Y eso, esta tarea tengo que hacer la medición de los indicadores, y sin bloquear. 
+
+Así que, perfecto. Pues, vale. O adelanto lo que hay en el tablero ahora mismo, antes de medir nada. 
+
+De las 20 tareas de las 3 historias de usuario que tenemos asignada el Spring, 10 ya están terminadas o en revisión. Y otras cuatro están en curso. Y las pruebas de acertación están aprobadas.
+
+Los modelos de datos están, están hechos. Y el control acceso lo entregamos hoy. Así que, vamos bastante bien. 
+
+Llevamos 5 días de 14 y tenemos gran parte hecho. Está perfecto. Y ya está. 
+
+Eso, ya lo volvimos. Varias tareas, la fecha inicial. Y hoy vamos cumpliendo todo. 
+
+Así que, perfecto. El control acceso está asignado para el bien de estrés. Es decir, lo terminamos a tarde. 
+
+Y el endpoint de consulta empezaría hoy. Y ya está. El de registro, el lunes por la mañana. 
+
+Y la historia de usuario número 8 avanza. Que quedan cerradas. Que quedan cerradas hoy. 
+
+La tarea acero y la tarea 1, la investigación de Javi va adelantándose y el diseño y el flujo lo dejamos para el lunes. ¿En lo vez bien Javi? Me parece bien. Así llegamos al refinamiento del miércoles con datos reales. 
+
+Y ahí ya podemos decidir si la historia de usuario 8 no, no cabe bien y podemos implementar ese problema. Ok. Vale, vale, pues lo ves bien.
+
+Vale, pues hago resumen que voy apuntando todas las cosas. Juanjo tiene que revisar el control acceso. Yamato y Carlos lo integran antes de que lo había dicho.
+
+Creo que habéis dicho. Después Carlos Yamato empieza, lo role y Juanjo el endpoint de consulta. Fabián tiene que hacer la confirmación de cuenta.
+
+Tomás, la interfaz del listado. Y José, cierra las pruebas de aceptación de la tarea, o sea de la historia de usuario 8. Que lo tiene que revisar Javi. Yo cierro la tarea 1. Y hago la, la medición de los indicadores de cómo vamos en las métricas. 
+
+Y ya está. Lune 16, Fabián termina el endpoint de registro. Carlos y Yamato los roles. 
+
+Juanjo el flujo de advertencia. Y Javi tiene que cerrar la investigación. Y listo. 
+
+Por la tarde del mismo lunes. Yamato y Fabián empiezan las contraseñas. Y listo. 
+
+Así que hoy vamos a actualizar hasta 10 click para ver lo que ya está revisado y lo que está hecho. Vamos a cambiarlo. Si podéis cambiarlo justo después de la reunión, pues mejor que mejor.
+
+Y listo. El fin de semana no hay reuniones. Así que trabajo que nos quitamos encima.
+
+Y nos vemos el lunes. Si podéis toda la misma hora, pues la misma hora. Y ya está. 
+
+¿No veis bien, no? Vale, sí. Perfecto. Por eso. 
+
+Buen fin de semana. Buen fin de semana.
+
+(Transcrito por TurboScribe. Actualizar a Ilimitado para eliminar este mensaje.)

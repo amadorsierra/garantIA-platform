@@ -1,0 +1,99 @@
+(Transcrito por TurboScribe. Actualizar a Ilimitado para eliminar este mensaje.)
+
+(0:02 - 0:12)
+Bueno, tira. Bueno, tira. Vale, perfecto.
+
+(0:12 - 0:21)
+Pues bueno, lo de siempre. El Spring 1 ha abierto en clica. Ya nadie le ha hecho el usuario 8. Las tres preguntas.
+
+(0:22 - 0:47)
+¿Qué hice allí que acercó al equipo al objetivo del Spring? ¿Qué voy a hacer hoy para acercar al equipo al objetivo del Spring? ¿Y si hay algo que enbloque? Y hasta las tareas de la historia de usuario las tenemos que repartir. Luego, tengo una buena noticia, ¿vale? Ayer nos escondió bastante. Se nota que ya pasamos el examen de la UNI.
+
+(0:48 - 1:15)
+Y tenemos ya todas las sub-tareas de la historia de usuario 1, la historia de usuario 16 y la historia de usuario 26 terminadas. Entonces, hoy como siempre, un minuto con las tres preguntas cada uno, pero también tenéis que contarme con qué podría ayudar en la historia de usuario 8. Porque a partir de hoy, pues nos vamos a poner a tope con ellas. Y ya está.
+
+(1:15 - 1:43)
+Como siempre, de derecha y izquierda en el tablero y empieza Javi. Vale, pues ya llegué, como comenté, hacerle la investigación de método de detección en la tarea 2 de la historia de usuario 8. Y ya se la pasaba bien. Y luego, por la tarde, me puse a adelantar mis post-tareas como developer, que es la parte de la historia de usuario 26 y la historia de usuario 16.
+
+(1:44 - 1:49)
+Les ha adelantado y ya las he terminado. Tres días antes de lo que teníamos previsto. Así vamos adelantando.
+
+(1:51 - 2:19)
+Y por otro lado, como Product Owner, hoy voy a verificar los criterios de aceptación de las tres historias sobre nuestra más principal y si todo va bien, la pasará hecho. Y vamos progresando. Les avisaré también a primera hora la prueba de aceptación de la historia de usuario 8 que me pasó allí por la noche de José.
+
+(2:20 - 2:29)
+Y voy mirando, ¿verdad? Para ahora, bien. Perfecto. Pues le toca José.
+
+(2:30 - 3:01)
+Sí, buenas. Ayer, justo cuando Adrián me pasó la tarea 1, me puse con ella y la terminé de golpe dos decenarios que me faltaban de la tarea 0 de la historia de usuario 8. En concreto, el de no publicar la vertencia, el de la cuenta bancaria y el de la matrícula. Ayer mismo por la tarea de que he terminado, por lo que estamos medio día adelantados respecto a lo que teníamos previsto.
+
+(3:03 - 3:35)
+De hecho, ya Javi tiene la tarea 0. Y también decir que los escenarios están automatizados y en rojo como tenías ahí, bueno, como estaba pedido, ¿no? Viendo ya lo que nos toca hace hoy, esta misma tarde, tengo previsto reunirme con Fabián para evaluar con él los pasos positivos y los datos que el sistema nos llega a esta, que es la tarea 5. Eso, lo único que hasta que él no tenga visto el prototipo, pues no podemos empezar. Por los demás, no tengo ningún bloqueo. Perfecto.
+
+(3:36 - 3:49)
+Pues el siguiente es Juanjo. Vale. Pues yo ayer pein mirel en point de la consulta de usuario 16, que era la tarea 3, que era la del filtro de permiso y la búsqueda por texto.
+
+(3:51 - 4:13)
+Y Fabián lo pudo revisar para la tarde y ya se quedó todo enterado, así que eso lo hemos terminado, por diante de lo que tenemos previsto. Y ya después de eso me puse con la tarea 3, y te la he hecho lejos desde 8, que es el diseño del flujo de pertencia. Y la idea es básicamente que cuando alguien puse publicar, se puedan insertar tanto el texto como lo archivo que haya juntos.
+
+(4:13 - 4:38)
+Y si se detectan datos personales en esa información, pues se detiene la publicación y se le indica al usuario que se ha encontrado datos personales y en qué parte para que pueda modificarlo. Y luego hoy voy a hablar con Carlos y Amador para ayudar a preparar la integración de la detección de la información dentro del proceso de la publicación. Y luego pues también echaré un vistazo a su código y las ayudaré si lo necesitan.
+
+(4:38 - 4:45)
+Y ya luego por mi parte ningún bloqueo. Perfecto. Pues el siguiente es Carlos.
+
+(4:47 - 4:59)
+Sí, bueno. Pues mira, ayer por la mañana, Amador y yo ya cerramos la asignación de roles. Era la tarea 5 de la historia usuario 26, que era la habitadora de autorías.
+
+(5:00 - 5:17)
+Que eso Fabián la revisó como comentamos ya y está integrada. Bueno, con eso ya la historia usuario 26 está terminada de nuestra parte. Y hoy nos vamos a poner ya con la tarea 6 de la historia de usuario 8, que es la implementación de la detección.
+
+(5:17 - 5:36)
+Que nos va a poner un día antes de lo previsto, pero bueno, como vamos bien, vamos a empezar ya. Y nada por la mañana, mientras que Fabián hace el prototipo, vamos a escribir las pruebas unitarias a partir de los cerarios que nos pasa José. Y luego por la tarde, cuando el prototipo esté validado, vamos a implementarlo.
+
+(5:36 - 5:42)
+Y ya está. Luego de bloqueo nada, todo correcto. Perfecto.
+
+(5:42 - 6:07)
+¿Quién el sientes? Amadoft. Gracias. Bueno, además de los roles con Carlos, ayer por la tarde con Fabián terminé las contraseñas, que es la tarea 6 de la historia usuario 1. Y al final no nos ha hecho falta el Marte, porque las pruebas han salido a la primera y Juanjo ya lo revisó, como ha dicho antes.
+
+(6:07 - 6:41)
+Así que hoy voy a tener todo el día libre para centrarme en la historia usuario 8. Y me pondré con Carlos con la tarea 6 de la historia usuario 8. Por la mañana, yo programaré las pruebas y ya él por la tarde se pondrá con la implementación. Y si seguimos así, te hemos previsto ya que la tarea 6 mañana por la mañana ya está hecho, vaya. Y por mi parte, no ningún bloqueo.
+
+(6:41 - 7:05)
+Perfecto. ¿Quién es el sientes Fabián? Bueno, voy a contar lo que hice ayer primero. Yo ayer por la mañana terminé el endpoint de Regitsula con el último criterio y Juanjo lo enteró antes de comer.
+
+(7:05 - 7:17)
+Así que ese endpoint ya perfecto, como ha dicho. Y por la tarde también terminamos las contraseñas con la modo. Así que básicamente todo lo que dije más allá se quedó listo.
+
+(7:18 - 7:36)
+Hoy por la mañana voy a hacer el prototipo de detección con los métodos que me pasó Javi, los textos de José, que me pasó ya los patrones pal de neiro, el teléfono, el correo, la cuenta bancaria y tal. Y por la tarde también lo voy a balbar con él. Así que hoy deberíamos dejar eso listo.
+
+(7:37 - 7:45)
+Y bloqueo no tenía ninguno. Perfecto. Pues el siguiente es Tomás.
+
+(7:52 - 8:01)
+Tomás, Tomás, no se te oye si no sé si estás silenciado. ¿Le escucháis ahora? Ahora sí, ahora sí. Vale, es que el micro va a regular.
+
+(8:02 - 8:18)
+Eso de lo que estaba diciendo, que ayer terminé la visualización de los casos y sus detalles, que es la tarea 4 de la historia de usuario 16. Y como Juanjo integró el endpoint, pues ya lo puede conectar directamente con datos reales. Y ya está, yo ya no tengo tareas pendientes.
+
+(8:19 - 8:34)
+Así que voy a ayudar con lo que pueda en la historia de usuario 8. Lo que me diga ahí lo hago. Y tenía pensado también preparar documento a Junto de Ejemplo. Algunos PDF, imágenes con y sin datos personales para que Fabián pueda probar el prototipo con Ajunto.
+
+(8:34 - 8:43)
+Y por la tarde quería revisar con José los resultados de los frazos positivos. Y ya está, yo sin bloqueo. Vale, perfecto.
+
+(8:44 - 9:02)
+Una mano y el doble. Ahora yo como developer. ayer a las 10 le pasé a José la historia, la tarea 1 de la historia 8, los tipos de datos personales y por la tarde termine el formular de registro.
+
+(9:02 - 9:25)
+Que es la tarea de usuario, o sea la tarea 5 de la historia de usuario 1. Ya ha conectado con el endpoint que hizo Fabián. Y luego ya tomó los revisos, lo he dicho antes y está completamente integrado. También bueno, hoy preparo el refinamiento de mañana y lo reviso con Juanjo.
+
+(9:26 - 10:10)
+El código de la tarea 6 y ya sin bloqueo. Entonces resumo más o menos como vamos que ya las 20 tareas de la historia de usuario del stream que estaba ya ahí comentamos que estaban 12 realizadas pues ya están las 20 completamente terminadas, todas revisadas por otra persona y integradas en la rama principal en el main. Las pruebas de gestación también de las tres historias de usuario están pasadas y ya sólo falta que nuestro Product Owner, Fabi verifique y las pase a hecho.
+
+(10:11 - 13:29)
+Y hasta cuando lo haga el burdown pasa a cero básicamente porque están las tres historias de usuario completadas que estaban asignadas para el print y listo, muchas gracias a los que habían trabajado. Ahora lo que toca es pues ponernos con el usuario mucho a tope que ya tenemos la tarea cero 1, 2 y 3 entonces la idea es que para mañana antes de la reunión estén hechas hasta las 6 y listo por la mañana Fabian tiene que hacer el prototipo con los ajuntos que le pase domán y Carlos y Amado tienen que escribir las pruebas de la tarea 6 por la tarde tendrían que ponerse Fabian y José con los falsos positivos que ha dicho Tomás que ha hecho una mano, así que perfecto y Carlos y Amado tienen que implementar la detección Juanjo tiene que ir preparando donde se engancha el flujo de publicación y listo mañana por la mañana si tenemos terminada la historia 6 la historia número de la tarea 6 y está terminada y revisada pues digamos perfecto el tiempo ¿Cómo lo ve el Product Owner? Perfecto ya hemos cumplido nuestro objetivo con las tres historias en hecho así que bien trabajado el equipo, ya está todo ya podemos ir con la historia de usuario 8 con calma y ya mañana en el refinamiento vemos con lo que ya ha hecho como proseguimos durante el resto de la semana y vamos viendo de nada, todo por esto pues listo resumiendo lo que yo apuntando hoy por la mañana Javi tiene que verificar las tres historias y revisar la tarea 0 de la historia de usuario 8 final le toca hacer el prototipo Tomás prepara los los ajuntos Carlos y Amado describen las pruebas de la tarea 6 y ya por la tarde Fabián y José evaluan los falsos positivos con la ayuda de Tomás y Carlos y Amado implementan la detección con Juanjo y hasta yo a mí me toca preparar el refinamiento y luego para mañana, en 2018 vamos intentando tener la tarea 6 terminada por la mañana y el refinamiento también y ya está, revisamos la historia de usuario 8 y y siguen igual la demo para el bienes 20 y el sprint review el domingo 22 que es el último del sprint, ya está y antes de irnos Javi cuando verifiquen las historias pasadas ha hecho el clicker y ya está lo demás pues la historia la tarea de la historia de usuario 8 pues que estén incursos que estamos trabajando en ella y listo, mañana más y mejor mañana podéis toda la misma ahora ¿no? vale, perfecto, voy hasta hasta luego hasta luego adiós
+
+(Transcrito por TurboScribe. Actualizar a Ilimitado para eliminar este mensaje.)

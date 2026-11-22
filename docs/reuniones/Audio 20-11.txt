@@ -1,0 +1,67 @@
+(Transcrito por TurboScribe. Actualizar a Ilimitado para eliminar este mensaje.)
+
+Buenos días. Buenas. Buenos días. 
+
+Buena, buena. Bueno, hoy es la última reunión del sprint, así que hay que hacer un formato distinto, ¿vale? Voy a explicar las partes que tienen, en qué consiste cada parte. Son cinco partes, ¿vale?, que dividen los quince minutos de siempre. 
+
+Primero vamos a hacer una ronda en la que cada uno tiene que decir una frase con lo que ha cerrado en el sprint y si le ha quedado algo pendiente. Si las preguntas de siempre, ¿vale?, esas preguntas ya hoy no. Luego vamos a repasar el tablero y Javi tiene que confirmar el estado de las historias del usuario en el que se ha quedado cada una. 
+
+Tercero, nos repartimos las partes de la sprint review del domingo y ¿quién le va a enseñar cada historio al profesor? Cuarto, cada uno dice una cosa que haya funcionado o que cambiar, que no haya funcionado, perdón, o que cambiaría para llevarlo a tenerlo en la retrospectiva, ¿vale?, de lo que apunta yo y ya está. Y por último, la pregunta que va a ser una parte en la que yo voy a decir un par de cosas y ya está. Luego, si alguna parte se sal un tema largo o vemos que se va a largar mucho, pues lo dejamos para después, ¿vale? Pues ya está. 
+
+Javi, empiezad tú. Vale, pues yo tengo verificado las tres historias del sprint y después por otro lado la historia 2 y la 3 ya están listas para el sprint 2 y me falta verificar la historia 8 esta tarde con ya tu demo interno. Vale, pues el siguiente José.
+
+Buenas, yo ayer por la tarde ya preparé los escenarios de aceptación de la segunda historia de suario, de la historia de suario 2 para el segundo sprint y no me quedaba nada para hacer en este sprint y no he terminado todo lo que tenía asignado. Vale, perfecto, o sea no tiene nada pendiente. Vale, el siguiente Juanjo.
+
+Vale, yo dejaron todas las mejoras de código para el sprint 2 sin cambiar nada del comportamiento y ya pues a mí tampoco me queda nada que estoy disponible para lo que haga falta en la demo. Perfecto, ¿vale, Carlos? Sí, bueno, yo como dije ayer por la tarde estuvo repasando la docentación de la historia de suario 26 y está todo bien, está todo al día y nada del sprint no me queda nada más. Bien. 
+
+Perfecto, eh, Amador. Hola, esta mañana voy a hacer el criterio 5 de la tarea 7 que es que la publicación no se haga a esta vez la verdencia y luego aplico lo estilo de Tomás. Abriré la pull request por la tarde, si puede ser la primera hora de la tarde y listo. 
+
+Vale, perfecto, cuándo sé cómo digiste ayer, ¿vale? Eh, Fabián. Yo tengo la documentación del módulo de detección, yo he terminado desde el miércoles y hoy no tengo nada pendiente, ahora mismo, pero esta tarde me pongo con la demo. Vale. 
+
+Pues, ¿sintes Tomás? Tomás. Tomás está silenciado. O no está, ahora funciona, ahora, ahora, era el micro.
+
+Es el micro, tío, que me lo tengo a hacer cápecha, que lo que estoy diciendo, que yo, lo único que me queda es revisar la pull request de la tarea 7 de Amador, que en cuanto la tenga que, que me avise y ya está el único que me queda. Vale, perfecto. Eh, por último yo, yo hoy hago la medición de los indicadores y esta tarde preparo números para la review y, y vito, ya solo me diga eso. 
+
+Vale, pues, vamos a repasar el tablero eh, de la historia de usuario, ¿vale? Y Fabi confirma cada una de ellas. Entonces, eh, la historia de usuario uno, la creación de cuenta, está en el estado hecho y se han cumplido los ocho puntos que, que tenían que cumplirse. Y fue verificada el martes diecisiete. 
+
+Sí. La historia de usuario veintiséis, gestión de permiso según el rol, eh, cumple los cinco puntos que tenía y también está el estado en hecho y también fue verificada el martes diecisiete. Luego, la historia de usuario dieciséis, consulta de casos públic, publicados, perdón, eh, cinco puntos de cinco, estado en hecho y verificado el diecisiete, martes. 
+
+Y, eh, la historia de usuario ocho, de avertencia de datos sensible, el estado se verifica hasta tarde, pero pasará hecho cuando, cuando, cuando el estado pasará hecho, sí, sí, sí, cuando amado haga, haga la tarea siete y tomas la, la revisa, sí. Y ya está. Eh, entonces, ¿Cómo lo dejaste? Eh, confirmo, como has dicho, sí, las tres historias que tenemos comprometidas están ya en el estado de hecho, con todos sus dieciocho puntos. 
+
+Así que, luego, la historia de usuario. Sí, que, que, por cierto, me equivocaba que los puntos son la, la importancia que tiene la historia dentro de. Sí, sí. 
+
+Que estaba diciendo. Sí, sí. Por eso, las, las redes, como ya hemos estado diciendo estos días, la tarea siete, si la conseguimos integrar perfecto y cumple todos los criterios y tal. 
+
+Si vemos que no, pues, lo podemos quitar del, del review y, y no pasa nada. Ok. Está todo, está todo hecho. 
+
+Vale, perfecto. Pues, ya está la medición de hoy, o hago un peliño de adentro que las historias de usuario entregadas, pues, dentro del objetivo del esplín, estaban tres, las tres han sido entregadas, o sea, el cien, el cien por cien de ellas. Y además, eh, la ocho, cuando amadoito más termine esta tarde, pues, también será un maestro de usuario más hecho. 
+
+Eso cumplimiento de fecha, las tres dentro de fecha, el Burnham llegó a, bajo a cero, el martes, y ya está, y la depiación del esfuerzo, eh, la calculamos, eh, antes del lunes, o sea, sí, la calculamos antes del lunes, que la, o sea, el cálculo de la amética no vamos a poner a amado yo a hacerlo, porque al final esa práctica le hicimos nosotros, que fue la práctica cinco si no me equivoco, y, y hasta ahí lo tenemos que poner las pistas de el, del ClickUp. Y, listo, eh, eso, de cara a enseñarle al profesor, le vamos a enseñar todo lo que está en hecho en la rama principal de, en el main de ClickUp, que le tenemos que entregar al repositorio, y, eh, y listo con, propongo que, que cada historia la presente en, en el laboratorio, si tenemos que hacerle una explicación pues, ¿Quién la ha hecho? Que básicamente, a exterior usuario uno, eh, que la presentemos Fabián y yo, la 26, eh, Amado y Carlos, las 16, Juan Juíto, más, y la 8, Amado y José, y ya está, y por último, los, los indicadores, eh, Javi, que el Product Owner, yo que soy el, el Scrum Master, y Amado, que les va a ayudar a calcular las métricas, que si lo ves bien, Javi. Sí, sí, me parece bien, eh, presento yo, con Product Owner, todo el objetivo de Spring, y luego cada uno, como, soy usted el usuario.
+
+Ahora, eh, Carlos, usaremos tus datos de ejemplo de demo para esta tarde hoy, y así le enseñamos el domingo todo. Vale, vale, te lo dejo en la rama principal, ¿vale? Vale, vale. Eh, vale, pues, la parte 4, eh, eh, eso, que vamos a decir ahora cada uno lo que, lo que creemos que ha funcionado durante el Spring, y las cosas que cambiaremos de cada un segundo, pues, para que el flujo de trabajo y eso fuese, fuese mejor, y ya está, la voy a apuntarnos, así que, siguiendo el orden de siempre, Javi.
+
+Vale, pues, yo creo que funcionó el responder la duda de requisitos rápidos, así nadie se quedó parado, y esperando, y podemos avanzar con su vez. Vale. Eh, José.
+
+Yo creo que, que hiciéramos las pruebas de acertación al principio, no funcionó, aunque esa primera semana, fueron un cuello de botellas, lo, lo han ayudado. Y la próxima vez, lo que sí, repartiría entre más personas, algunas tareas, desde el principio, desde que planificamos todo. Vale. 
+
+Eh, Juanjo. Eh, yo, eh, adelantar fechas, la Sunder reunión, nos hizo, y volve con varias tareas, así que es mejor que, básicamente, prometer menos y poder cumplirlo. Vale. 
+
+Eh, Carlos. Eh, yo, programar en pareja las tareas de seguridad, funcionó bastante bien, porque los dos conocíamos el código y las revisiones fueron bastante rápidas, o sea que estaba bien, tron pareja. Ok. 
+
+Eh, Amador. Yo cambiaría, que deberíamos avisar de los exámenes que tengamos en el planning, para no planificar tareas esos días, porque al final lo que nos ha pasado es que hemos tenido unos exámenes y hemos tenido que estudiar, y en esos días, que teníamos asignado cosas, al final no las hemos hecho. Sí, o que otros proyectos no han quitado tiempo de trabajo en este, también.
+
+Sí. Eh, Fabián. Pues, a ver, yo creo, mi opinión, que con las pruebas hemos integrado con mucha más confianza, ya que están, nos han avisado de los errores mucho antes que nadie vaya.
+
+Vale, perfecto. Eh, Tomás. Yo diría que tener los diseños de la interfaz antes de implementarlas, nos ahorró bastante tiempo, la verdad, yo cuando acabé los míos, me, o sea, que era bastante, bastante útil tenerlo.
+
+Vale. Y luego yo, eh, voy a apuntar a un fallo mío, que es que registrar las horas desde el primer día y mantener click up al día, como mover a este usuario 8 del backlog al sprint, eh, pues, que no le dice a tiempo, porque tarde, tarde dos días, no se me olvido, básicamente, no importa cosa. Y, y ya está, pues ya lo tengo, lo he apuntado todo, ¿eh? Eh, listo. 
+
+Antes de, de irnos, eh, comentar que, eh, comentar la última reunión del sprint, pues, que han sido dos semanas de trabajar mucho, de, de, de que lo habéis hecho muy bien, yo creo que al final, hemos llegado al dividido al final, menos por la tarea que hay que terminar hoy, pero quiero decir que es solo una. Y que, que tenemos las tres historias de usuarios a las que no habíamos comprometido, terminada, con, con varios días de antelación, y eso, aunque el historias de usuario 8 esté pendiente, que se va a terminar casi seguro. Así que, ya está, aún habiendo habido huelga y exámenes y eso, que no hemos reorganizado bien, yo creo, la verdad, yo creo que Ágil ha sido la metodología, y, y listo.
+
+Luego, cuando quiero resaltar que cuando alguien iba justillo, como tomaba con, con las pruebas de la historia de usuario 16, o con José, por ejemplo, que al principio lo que estaba la historia, la tarea 0, perdón, de la historia de usuario y eso, pues, que al final, eh, que había sido solidario, por así decirlo, y que, que había rimado el hombro, y ya está, desde acá también que, que no hemos tomado en serio el stream, que hemos llevado a las cosas todos los días que hemos intentado llevarlo, o sea, que hemos podido, y, y ya está, que yo creo que, para ser primero, no ha sido perfecto, pero que hemos hecho muchas cosas bien y que hemos aprendido las cosas que tenemos que mejorar de cada uno segundo, que no sabemos si lo hablo y no, pero, si lo hubiese, pues, ya contamos con ellos. Y ya está, muy bien trabajado. ¿Tú opinas, Javi? Pues nada, todo perfecto, bien trabajado a todo el equipo, hemos cumplido nuestro objetivo y, y pues nada, a preparándose un sprint 2, y, todo lo que hemos aprendido en este, y hemos avanzado, para poder llevar mucho mejor a cabo el siguiente.
+
+Pues, pues, aplausos, y ya está, que se permitió. Trabajaba aquí. Pues venga, no vemos.
+
+Nos vemos. Hasta la próxima. Hasta la próxima, chau.
+
+(Transcrito por TurboScribe. Actualizar a Ilimitado para eliminar este mensaje.)

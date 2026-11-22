@@ -1,0 +1,55 @@
+(Transcrito por TurboScribe. Actualizar a Ilimitado para eliminar este mensaje.)
+
+Buenos días, gente. Buenos días. Buenos días.
+
+Buenas. Venga, por segunda reunión del Spring 1. Eso, ayer fue la primera reunión que fue, pues, distribuimos las cosas. A partir de ahora, todas las reuniones van a ser, principalmente, contestadas a tres preguntas, y cada uno que la conteste como de la gana.
+
+¿Qué hicimos ayer? ¿Qué nos acercó al objetivo del Spring? ¿Qué vamos a hacer hoy? ¿Qué nos acercó al objetivo del Spring? ¿Y si hay algo que te esté bloqueando tu trabajo? Porque es importante notificarlo para poder tener un buen flujo de trabajo. Entonces, vamos a ir de derecha y izquierda en el tablero. Así que, y empezamos por lo que está más cerca de terminarse.
+
+Entonces, si alguien quiere, por cierto, adelantar trabajo, pues que lo diga, y eso vamos añadiendo cosas nuevas de experiencias de falta. Entonces, empieza Javi. ¿Qué es el primero? Javi.
+
+Perdón, perdón. Vale, pues, sobre lo que hice ayer. Básicamente, estuve revisando la parte de la prueba de aceptación de la historia 26, junto con José, y por lo que vi, parece que está bastante bien.
+
+Lo único que fue, le he tocado un pequeño cambio, sobre que, pues, cuando una persona que su rol no le permitía enterar a cierta función, le salía, creo que le salía de la pantalla en blanco, no sería nada, y esa parte está mal, así que lo hemos puesto para que salga una pantalla en el acceso de negado. Que en vez de un 404 este típico le salga un mensaje... Especialmente, y así ya entiende cuál es el problema del por qué no cuenta, que si no, a lo mejor no entiende qué ocurre, a lo mejor hace un fallo. Esa fue la parte de ayer, y con respecto a la tarea de hoy, pues me pondrá avisado las otras dos historias, que serían la primera y la 16, cuando las terminemos las revisaré, y con respecto al resto de tareas sobre cómo developer, yo por mi parte no tengo ningún tipo de problema, todo sigue como está planeado, y por mí seguimos adelante.
+
+Sin bloqueos, ¿no? Sí, todo perfecto. Por el siguiente que sale es José. Sí, yo ayer terminé la tarea 0 de la historia de user26, y también la tarea 1, que era la que abarcaba los premisos de cada error, que si no recuerdo más era la que le hacía falta a Carlos para completar la matriz, entonces pues ya la puede terminar, y luego por la tarde me puse con Tomás para los escenarios de la historia de user26, y ya contamos con el listado y la consulta de los casos, y cada pendiente puede resolver la paginación.
+
+¿Has dicho 26 o 16? Porque yo tengo apuntado de ayer. Sí, sí, 16, que me he equivocado, perdón. Ah, vale, vale.
+
+Eso, pues, ya nos pusimos con los escenarios de la 16, y lo que nos queda pendiente es resolver la paginación y definir lo que se le muestra al usuario cuando todavía no está los casos publicados. Y pues para hoy, en mi idea termina la tarea 0 de la historia de user1 durante esta mañana, y ya por la tarde termina con Tomás la tarea de la historia de user26. Así, pues, ya estaría, las tres tarea 0 están terminadas, y pues en cuanto al bloqueo, yo la verdad no tengo ninguno.
+
+Solo tengo una duda para Javi sobre el número de casos que se den otras por página, pero bueno, solo podemos hablar después de la reunión. Sí, sí, vamos a dejarlo para luego. Sí, sí, sí, porque si no supa la regla.
+
+Vale, pues... Y yo... Yo creo que ya está todo, sí. Yo van a ver, yo van a ver. Vale, pues yo pregunto por mi parte.
+
+Ayer empecé la tarea 3 de la historia de user26, que es la del modelo de role y permiso, y lo hice partiendo lo que había hecho José en la tarea 1, y ya por la tengo bastionmente terminada, incluyendo las pruebas. Para hoy, ya quiero dejarlo listo y poder subir la revisión, y después, pues, me pondré con la tarea 3 de la historia de usuario 1, que es la del modelo de usuario, y pues, mi idea esta no terminó para mañana, que sería un día antes lo previsto. Además, quería proporcionar un pequeño cambio, que es que como el micro de ya habría terminado los dos modelos, me gustaría adelantar al jueves la tarea 3 de la historia de usuario 16, que es la del endpoint de consulta.
+
+Y lo voy a desarrollar siguiendo las pruebas de José y Tomá, para ir comprobando que todo funciona a medida que avanzo. Y luego, primero lo haré sin el filtro de permiso, y cuando ya Maduricán los tenga integrado el control de acceso, pues lo podré conectar. Y luego, ya por el tema de bloqueos, por mi parte, no he tenido ninguno.
+
+Vale. Bueno, Carlos. Vale.
+
+Pues, yo por mi parte, pues, ayer por la tarde, cuando José ya subió la tarea 1, hice la matriz, está de permiso, que es la tarea 2 de la historia de usuario 26, que necesitaba lo suyo, lo de José. Y luego, para hoy, lo que ya había dejado en revisión es eso. Y como hoy me he quedado libre de tarea, lo que voy a hacer es esperar al jueves.
+
+Y ya me voy a poner con Amador, le voy a dar al control de acceso, nos va a poner con eso los dos. Y luego, en cuanto al modelo de rol, le dejo a José, que nos va a llegar esta tarde, pues nada, lo esperaré, y lo que haré será ir montando los test, y tal, a partir de la matriz. Y ya está, el control bloqueo nada, porque lo de José me llegó bien, es lo de la tarea 1, de la historia de usuario 26.
+
+Así que guay. Perfecto. Y bloquea ningún efecto.
+
+Bueno, voy a hablar. Sí, te toca, te toca. Vale.
+
+Bueno, allí estuve trasteando con las ramas del control de acceso y la configuración base de seguridad. Tuve ahí el local trabajando, pero bueno, sin lógica todavía. Para no perder el tiempo cuando ya esté en el modelo y la matriz, ¿no? Y respecto a lo que he dicho Carlos, sí, empezamos hoy por la tarde, si quieres.
+
+Llevo al teclado y tuve revisando todo. Vale, vale. Y bueno, hoy quiero arrancar con el control de acceso de la tarea 4 y la historia de usuario 26.
+
+Y yo creo que puede estar integrado el jueves 12 un día antes. Y luego la tarea 5 de roles ya sería Carlos, te pones a programar y yo reviso este viernes. Y luego para la historia de usuario 16 esto le daría un día más de margen y así vamos más tranquilos.
+
+Luego respecto a lo bloqueo ninguno porque solo dependo de que Juan José va al modelo de roles esta tarde y bueno, si se retrasa pues nada, seguimos con las pruebas y ya está, sin problemas. Vale, perfecto. Por el siguiente, Fabiano.
+
+Sí. Yo ayer todavía no me pudo ponerme el loin por lo que hemos hablado, que falta algunas tareas y así que me puse a revisar la tarea 0 de la historia 26. Deje también, me puse a adelantar un poquito de trabajo, de lo que es login me puse a preparar el endpoint que lo tengo hasta listo y la tarea 4 de usuario pues eso.
+
+La terminaré cuando cuando Juanjo termine los suyos que como has dicho antes Juanjo vas a poder terminarla para mañana y vas a adelantarla. Correcto, correcto. Pues entonces a mí me viene bastante bien eso, así que cuando tengas el modelo de usuario yo me pondré con eso y creo que para el viernes lo podré tener terminado.
+
+Después me pondré con las contraseñas con el hash y tal, lo que hable contigo Amador y si terminamos el viernes con eso el sábado me quedan huequecillos va a poder repasar o lo que sea que me pidae y bloqueo no tenía ninguno. Ahora mismo entro bien. Pues bien, ahí siente esto más y ya lo voy yo y casi me cerramos.
+
+Yo allí estuve con José mirando los escenarios de la historia de usuario 16 y el listado y la consulta ya están hechas de un caso y ahora en un rato me pongo a diseñar el formulario de registro que es el atariado de la historia 1 y ahí te la paso a ti Adri y ahora antes de comer y ya por la tarde cierro con José la tarea 0 de la historia de usuario 16 y hasta el jueves y el viernes termino con los diseños de la historia de usuario 16 o sea que no hay ningún problema. Perfecto, perfecto. Vale, yo como developer pues ahí ya termine la tarea 1 de la historia de usuario 1 los datos necesarios para el registro y eso y Joan y Fabián ya la han usado y eso y nada voy a preparar hoy la medición de indicadores para el viernes y ya está y voy a pedirle levantar un poquito de trabajo a ver si tomas tú me puedes pasar hoy el diseño y empiezo con el formulario de registro Perfecto, perfecto y ya está iba a decir a ver eso Carlos y Amado empiezan muy con el control acceso Fabián empieza el endpoint y yo el formulario y yo lo veo todo bien lo que si eso no es exacta la aceptación ni nada iba a proponer añadir algo, una historia más de usuario porque al final hemos añadido solo 3 y yo creo que si añadimos una pues al final el primer se queda más completo había pensado añadir lector de usuario 8 que en la teoría se nos quedaba largo para el spring pero pues ahora en la práctica vamos bastante mejor de lo previsto y yo veo bien yo veo bien añadirlo que la semana que viene pues se quedaría libre Carlos y Amado cuando terminen la historia de usuario 26 y Fabián y Joan que también van a levantar ellos entonces la historia sigue siendo lo primero pero propongo esta metela en el spring sacarla del back lo y meterla en el spring más que nada para tener una buena secuencia de trabajo eso su prioridad es la 4 que es justo detrás de las que ya están añadidas y y eso tenemos menos riesgo para el spring 2 porque nos quitamos un poquito de carga de trabajo de cara al futuro entonces como lo vais viendo osea si os parece con idea bien y si no pues lo dialogamos y ya vemos que hacemos yo lo veo yo también vale pues voy a resumir un poquito lo de hoy que lo tengo aquí apuntado y cerramos hoy Josi Tomás os voy a poner con las pruebas de esta acción de la 1 y la 16 correcto si vale Joan termina el modelo de roles si Carlos y Amado empiezan el control acceso y Tomás el diseño del formulario si perfecto y ya mañana Fabián empieza con el endpoint de los registros si el jueves control acceso integrado y Joan y yo empezamos con con lo que hemos decidido que lo acabo de apuntar y ya está la historia de usuario entra en el stream y la vamos a revisar en el colec 18 vale perfecto pues ya está he apuntado también la duda que cuando después de la reunión que ya vamos a cerrar cuando Javi, tu, Josi, Abley lo que tengáis que hablar no lo decís por lo que voy a hacer y ya está y listo y vale pues voy a mover muy buena historia de usuario 8 al del backlog al spring 1 así no lo responsable a su tarea y listo y ya está la fecha de cada su tarea y yo está malo perfecto pues mañana y ahora viene bien si si perfecto venga chau chau chau
+
+(Transcrito por TurboScribe. Actualizar a Ilimitado para eliminar este mensaje.)
