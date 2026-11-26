@@ -49,6 +49,8 @@ No se persigue una comunidad amplia ni usuarios finales a corto plazo. Un foro d
 | Funcionalidades de IA y adjuntos (HU-03) | No se anuncian | Aún no existen. Se incluyen en el roadmap como funcionalidades planificadas. |
 | Futuras integraciones con proveedores de IA | Se publicará el código, nunca las claves de acceso | El proveedor y la clave se configurarán mediante variables de entorno, igual que la conexión a la base de datos. Deberá existir una implementación que funcione sin clave, para que cualquier persona pueda probar el sistema sin coste. |
 
+**Nota sobre la exclusión.** Las métricas y las reuniones se entregaron en este repositorio como parte de prácticas anteriores. Antes de eliminarlas del historial, deben guardarse en la entrega privada de la asignatura y acordarse con el Scrum Master. Hasta entonces, es una decisión del plan y no una acción ya realizada.
+
 **Decisión sobre el detector.** De momento se mantiene dentro del repositorio principal. Separarlo en una librería independiente solo se justifica si surge demanda externa. Hacerlo antes duplicaría el esfuerzo de mantenimiento en un equipo que dejará de trabajar en el proyecto al terminar el curso.
 
 ---
@@ -69,35 +71,27 @@ No se persigue una comunidad amplia ni usuarios finales a corto plazo. Un foro d
 
 ## 4. Madurez del proyecto
 
-El proyecto se encuentra en una **fase inicial de desarrollo**. Sirve como base técnica para otros desarrolladores, pero no está preparado para usuarios finales ni para un despliegue en producción.
+El proyecto se encuentra en una **fase inicial de desarrollo** (versión `0.0.1-SNAPSHOT`, sin releases). Sirve como base técnica para otros desarrolladores, pero no está preparado para usuarios finales ni para un despliegue en producción.
 
-| Título | Descripción (implementado en el Sprint 1, 26 puntos entregados) | Pendiente |
+**Implementado en el Sprint 1 (26 puntos entregados):**
+
+- HU-01 Creación de cuenta, con almacenamiento seguro de contraseñas.
+- HU-26 Gestión de permisos según el rol, con registro de los cambios de rol.
+- HU-16 Consulta de casos publicados: listado, detalle, filtros y paginación.
+- HU-08 Advertencia de datos sensibles, solo sobre texto.
+- Pruebas unitarias y de aceptación, integración continua en backend y frontend, y migraciones con Flyway.
+
+**Pendiente que bloquea la apertura:**
+
+| HU | Situación actual | Consecuencia para la apertura |
 |---|---|---|
-| HU-01 Creación de cuenta | Registro de usuarios con almacenamiento seguro de contraseñas | Ciclo básico del foro: Publicación de Casos (HU-02, prioridad urgente), Responder consultas (HU-13) y Confirmación de caso resuelto (HU-07) |
-| HU-26 Gestión de permisos según el rol | Roles y permisos definidos en código, con registro de los cambios de rol | Seguridad de un sitio abierto: Denuncia de contenido inapropiado (HU-14), Limitación de publicaciones repetitivas (HU-27), Revisión de sanciones (HU-22), Revisión de casos dudosos (HU-23) y Consulta del registro de moderación (HU-24) |
-| HU-16 Consulta de casos publicados | Listado y detalle de casos, con filtros y paginación | Derechos del usuario y operación: Modificación de datos personales (HU-09, prioridad urgente), Copias de seguridad (HU-28) y Control de acceso a documentos (HU-29) |
-| HU-08 Advertencia de datos sensibles | Aviso al usuario cuando el texto que va a publicar contiene datos personales | Funcionalidades de IA (apartado 1) y Adjuntar documentos (HU-03). El detector solo analiza texto. |
-| Pruebas e integración continua | Pruebas unitarias y de aceptación, con integración continua en backend y frontend | Configuración para producción. Solo existen la configuración base y el perfil de desarrollo, y `compose.yaml` únicamente levanta la base de datos. |
-| Migraciones de base de datos | Migraciones versionadas con Flyway | README sin contenido, ausencia de licencia y ninguna versión publicada (`0.0.1-SNAPSHOT`) |
+| HU-02 Publicación de casos | No existe ningún endpoint para crear casos. | Sin ella no se puede evaluar el foro: solo se consultan los casos de demostración. Es la condición principal para anunciar el proyecto. |
+| HU-13 Responder consultas y HU-07 Confirmación de caso resuelto | Las respuestas y el estado `RESUELTO` existen en la base de datos, pero solo se cargan desde los datos de demostración. | El foro no permite la interacción entre usuarios ni completar el ciclo de vida de un caso. |
+| HU-14, HU-27 y HU-22 a HU-24 (moderación) | El rol `MODERADOR` y el permiso `CONTENIDO_MODERAR` están definidos, pero no tienen funcionalidad. | Un despliegue público quedaría expuesto a abuso y spam. |
+| HU-09 Modificación de datos personales | Sin implementar (prioridad urgente). | Los usuarios no pueden rectificar sus datos, lo que impide un uso real. |
+| HU-03 Adjuntar documentos | Sin implementar; la CA2 de HU-08 queda pendiente de ella. | El detector debe presentarse como limitado a texto. |
 
-### Funcionalidades que aún no están preparadas
-
-Todas las historias siguientes figuran en ClickUp con el estado «lista para sprint» y no tienen código en `main`, salvo lo que se indica en la columna de situación actual.
-
-| HU | Título | Situación actual | Consecuencia para la apertura |
-|---|---|---|---|
-| HU-02 | Publicación de Casos | No existe ningún endpoint para crear casos. El permiso `CASOS_PUBLICAR` solo protege, de momento, el análisis de datos sensibles. | Sin esta historia no se puede evaluar el foro: solo se consultan los casos de demostración. Es la condición principal para anunciar el proyecto. |
-| HU-13 | Responder consultas | Las respuestas existen en la base de datos y se muestran en el detalle del caso, pero no pueden crearse. El permiso `RESPUESTAS_PUBLICAR` está definido y no se utiliza. | El foro no permite la interacción entre usuarios, que es su propósito. |
-| HU-07 | Confirmación de caso resuelto | El estado `RESUELTO` existe, pero solo se asigna desde los datos de demostración. | El ciclo de vida de un caso no puede completarse desde la aplicación. |
-| HU-08 (parte de adjuntos) y HU-03 | Advertencia de datos sensibles / Adjuntar documentos | La advertencia funciona sobre texto en una página de comprobación independiente, a falta de la publicación real. Los adjuntos no existen. | El detector debe presentarse como limitado a texto. |
-| HU-14, HU-27 | Denuncia de contenido inapropiado / Limitación de publicaciones repetitivas | Sin implementar. | Un despliegue público quedaría expuesto a abuso y spam. |
-| HU-22, HU-23, HU-24 | Revisión de sanciones / Revisión de casos dudosos / Consulta del registro de moderación | El rol `MODERADOR` y el permiso `CONTENIDO_MODERAR` están definidos, pero no tienen funcionalidad asociada. | No existe moderación de ningún tipo, ni humana ni automática. |
-| HU-09 | Modificación de datos personales | Sin implementar (prioridad urgente). | Los usuarios no pueden ejercer el derecho de rectificación de sus datos, lo que impide un uso real. |
-| HU-28, HU-29 | Copias de seguridad / Control de acceso a documentos | Sin implementar. | Requisitos de operación necesarios antes de cualquier despliegue. |
-| HU-05, HU-18 | Búsqueda de casos similares / Identificación de casos similares | Sin implementar. | Forman parte de la propuesta de valor del producto, que no puede comunicarse como disponible. |
-| HU-10, HU-11 | Generación de borradores de reclamación / Edición de borradores de reclamación | Sin implementar. | Además, requieren una decisión previa sobre la responsabilidad del contenido generado (apartado 6). |
-| HU-17, HU-19, HU-20 | Clasificación de casos / Generación de resúmenes de casos resueltos / Detección de contenido inapropiado | Sin implementar. No existe ninguna integración con un proveedor de IA. | Las funcionalidades de IA solo pueden figurar en el roadmap. |
-| HU-04, HU-06, HU-12, HU-15, HU-21, HU-25 | Valorar respuestas útiles / Contacto con usuarios con problemas similares / Avisos de nuevas respuestas / Seguimiento de temas / Escalado de sanciones importantes / Incorporación manual de casos resueltos | Sin implementar. | No bloquean la apertura. Algunas pueden servir como primeras tareas para colaboradores externos. |
+Las funcionalidades de IA (apartado 1) y el resto del backlog (HU-04, HU-06, HU-12, HU-15, HU-21, HU-25, HU-28 y HU-29) no bloquean la apertura: figurarán en el roadmap y algunas pueden servir como primeras tareas para colaboradores externos. Además, falta configuración para producción: solo existen la configuración base y el perfil de desarrollo, y `compose.yaml` únicamente levanta la base de datos.
 
 En lugar de un único criterio de «proyecto preparado», se establecen tres umbrales:
 
@@ -157,5 +151,5 @@ El README debe incluir:
 | Recabar la conformidad de los ocho autores con la licencia elegida | Equipo D | Antes de publicar |
 | Redactar el README con instrucciones de arranque, estado del proyecto, advertencia de uso en producción y descripción del detector en inglés | Equipo C, con el Equipo A | Antes de publicar |
 | Migrar a GitHub Issues las historias pendientes y los defectos abiertos, con etiquetas | Equipo A | Primera publicación |
-| Proponer al Product Owner que el Sprint 2 complete el ciclo básico del foro (HU-02, HU-13 y HU-07) antes de abordar las funcionalidades de IA | Equipo A | Planificación del Sprint 2 |
+| Priorizar en el Sprint 2 el ciclo básico del foro (HU-02, HU-13 y HU-07) antes de las funcionalidades de IA (decisión del Product Owner) | Equipo A | Planificación del Sprint 2 |
 | Publicar la versión `v0.1.0` y anunciar el proyecto una vez integradas HU-02, HU-13 y HU-07 | Todo el equipo | Primera publicación |
